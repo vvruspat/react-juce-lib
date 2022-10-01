@@ -6,15 +6,7 @@
     "type": "git",
     "url": "https://github.com/vvruspat/react-juce-lib.git"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/lib",
-    "dist/components",
-    "dist/src"
-  ],
+  "main": "src/index.tsx",
   "author": "Nick Thompson",
   "devDependencies": {
     "@babel/cli": "^7.10.0",
