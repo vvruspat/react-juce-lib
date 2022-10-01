@@ -36,10 +36,25 @@ export default {
     // Create a root Container if it doesnt exist
     if (!container._rootContainer) {
       //TODO: Double check passing false for final param "hydrate correct"
+
+      // containerInfo: Container,
+      // tag: RootTag,
+      // hydrationCallbacks: null | SuspenseHydrationCallbacks<SuspenseInstance>,
+      // isStrictMode: boolean,
+      // concurrentUpdatesByDefaultOverride: null | boolean,
+      // identifierPrefix: string,
+      // onRecoverableError: (error: Error) => void,
+      // transitionCallbacks: null | TransitionTracingCallbacks,
+
       container._rootContainer = __preferredRenderer.createContainer(
         container,
+        element,
+        null,
         false,
-        false
+        false,
+        "app",
+        (e) => console.log("error", e),
+        null
       );
     }
 

@@ -195,6 +195,7 @@ export interface CanvasProps {
   onDraw: (ctx: CanvasRenderingContext) => void;
   onMeasure?: (e: any) => void;
   stateful?: boolean;
+  children?: React.ReactNode;
 }
 
 interface CanvasState {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 
 import { View } from "./View";
 import { SyntheticMouseEvent } from "../lib/SyntheticEvents";
@@ -12,11 +12,8 @@ export interface ButtonProps {
   onMouseUp?: (e: SyntheticMouseEvent) => void;
   onMouseEnter?: (e: SyntheticMouseEvent) => void;
   onMouseLeave?: (e: SyntheticMouseEvent) => void;
+  children?: React.ReactNode;
 }
-
-type ButtonState = {
-  down: boolean;
-};
 
 /**
  * A simple Button component which can be used as a building block
@@ -48,58 +45,45 @@ type ButtonState = {
  * };
  *
  */
-export class Button extends Component<ButtonProps, ButtonState> {
-  private _ref: React.RefObject<ViewInstance>;
+export const Button = ({
+  onMouseDown,
+  onMouseUp,
+  onClick,
+  children,
+  ...other
+}: ButtonProps) => {
+  const _ref = useRef<ViewInstance>();
+  const [down, setDown] = useState(false);
+  const opacity = useMemo(() => (down ? 0.8 : 1.0), [down]);
 
-  constructor(props: ButtonProps) {
-    super(props);
-    this._ref = React.createRef();
+  const handleDown = useCallback((e: SyntheticMouseEvent): void => {
+    onMouseDown?.(e);
+    setDown(true);
+  }, []);
 
-    this.state = {
-      down: false,
-    };
-  }
+  const handleUp = useCallback((e: SyntheticMouseEvent): void => {
+    onMouseUp?.(e);
 
-  handleDown = (e: SyntheticMouseEvent): void => {
-    if (typeof this.props.onMouseDown === "function")
-      this.props.onMouseDown.call(null, e);
+    setDown(false);
 
-    this.setState({
-      down: true,
-    });
-  };
-
-  handleUp = (e: SyntheticMouseEvent): void => {
-    if (typeof this.props.onMouseUp === "function")
-      this.props.onMouseUp.call(null, e);
-
-    this.setState({
-      down: false,
-    });
-
-    if (typeof this.props.onClick === "function") {
-      const instance = this._ref ? this._ref.current : null;
+    if (typeof onClick === "function") {
+      const instance = _ref ? _ref.current : null;
 
       if (instance && instance.contains(e.relatedTarget)) {
-        this.props.onClick(e);
+        onClick(e);
       }
     }
-  };
+  }, []);
 
-  render = () => {
-    const { onMouseDown, onMouseUp, onClick, ...other } = this.props;
-    const opacity = this.state.down ? 0.8 : 1.0;
-
-    return (
-      <View
-        onMouseDown={this.handleDown}
-        onMouseUp={this.handleUp}
-        opacity={opacity}
-        viewRef={this._ref}
-        {...other}
-      >
-        {this.props.children}
-      </View>
-    );
-  };
-}
+  return (
+    <View
+      onMouseDown={handleDown}
+      onMouseUp={handleUp}
+      opacity={opacity}
+      viewRef={_ref}
+      {...other}
+    >
+      {children}
+    </View>
+  );
+};
