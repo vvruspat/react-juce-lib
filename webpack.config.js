@@ -6,7 +6,6 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "index.js",
-      ecmaVersion: 5,
       libraryTarget: "umd",
       globalObject: "this",
       sourceMapFilename: "[file].map",
