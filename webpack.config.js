@@ -9,7 +9,7 @@ module.exports = (_env) => {
       sourceMapFilename: "[file].map",
       devtoolModuleFilenameTemplate: "webpack:///[absolute-resource-path]",
     },
-    target: ["es5", "web"],
+    target: ["web", "es5"],
     devtool: "source-map",
     resolve: {
       extensions: [".tsx", ".ts", ".jsx", ".js"],
@@ -21,6 +21,26 @@ module.exports = (_env) => {
           exclude: path.resolve(__dirname, "node_modules"),
           use: [
             {
+              loader: "babel-loader",
+              options: {
+                presets: [
+                  [
+                    "@babel/preset-env",
+                    {
+                      targets: {
+                        browsers: [
+                          "> 1%",
+                          "last 2 versions",
+                          "Firefox ESR",
+                          "ie 11",
+                        ],
+                      },
+                    },
+                  ],
+                ],
+              },
+            },
+            {
               loader: "ts-loader",
               options: {
                 compilerOptions: {
@@ -29,6 +49,29 @@ module.exports = (_env) => {
               },
             },
           ],
+        },
+        {
+          test: /\.js$/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                [
+                  "@babel/preset-env",
+                  {
+                    targets: {
+                      browsers: [
+                        "> 1%",
+                        "last 2 versions",
+                        "Firefox ESR",
+                        "ie 11",
+                      ],
+                    },
+                  },
+                ],
+              ],
+            },
+          },
         },
         {
           test: /\.svg$/,
