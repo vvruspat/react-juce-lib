@@ -1,8 +1,8 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 204:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -123,7 +123,7 @@ module.exports["default"] = camelCase;
 /***/ }),
 
 /***/ 874:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -283,7 +283,7 @@ module.exports = {
 /***/ }),
 
 /***/ 818:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 /* MIT license */
 var colorNames = __webpack_require__(874);
@@ -1957,7 +1957,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 /***/ }),
 
 /***/ 187:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 // Copyright Joyent, Inc. and other Node contributors.
@@ -3354,7 +3354,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 /***/ }),
 
 /***/ 143:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 /**
@@ -3407,7 +3407,7 @@ module.exports = invariant;
 /***/ }),
 
 /***/ 171:
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = function isArrayish(obj) {
 	if (!obj || typeof obj === 'string') {
@@ -3423,7 +3423,7 @@ module.exports = function isArrayish(obj) {
 /***/ }),
 
 /***/ 228:
-/***/ ((module) => {
+/***/ (function(module) {
 
 /*
  * Natural Sort algorithm for Javascript - Version 0.7 - Released under MIT license
@@ -3475,7 +3475,7 @@ module.exports = function naturalSort (a, b) {
 /***/ }),
 
 /***/ 772:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports.all = __webpack_require__(938).properties;
 
@@ -3483,7 +3483,7 @@ module.exports.all = __webpack_require__(938).properties;
 /***/ }),
 
 /***/ 631:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var hasMap = typeof Map === 'function' && Map.prototype;
 var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, 'size') : null;
@@ -4002,7 +4002,7 @@ function arrObjKeys(obj, inspect) {
 /***/ }),
 
 /***/ 287:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 /**
  * @license React
@@ -4243,7 +4243,7 @@ exports.shouldSuspend=function(){return!1};exports.updateContainer=function(a,b,
 /***/ }),
 
 /***/ 525:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -4256,7 +4256,7 @@ if (true) {
 /***/ }),
 
 /***/ 251:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 var __webpack_unused_export__;
@@ -4276,7 +4276,7 @@ function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&
 /***/ }),
 
 /***/ 408:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ (function(__unused_webpack_module, exports) {
 
 "use strict";
 /**
@@ -4310,7 +4310,7 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
 /***/ }),
 
 /***/ 294:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -4323,7 +4323,7 @@ if (true) {
 /***/ }),
 
 /***/ 893:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -4336,7 +4336,7 @@ if (true) {
 /***/ }),
 
 /***/ 53:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ (function(__unused_webpack_module, exports) {
 
 "use strict";
 /**
@@ -4363,7 +4363,7 @@ exports.unstable_shouldYield=M;exports.unstable_wrapCallback=function(a){var b=y
 /***/ }),
 
 /***/ 840:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -4376,7 +4376,7 @@ if (true) {
 /***/ }),
 
 /***/ 377:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // A library of seedable RNGs implemented in Javascript.
 //
@@ -5382,7 +5382,7 @@ if ( true && module.exports) {
 /***/ }),
 
 /***/ 851:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -5419,14 +5419,14 @@ swizzle.wrap = function (fn) {
 /***/ }),
 
 /***/ 654:
-/***/ (() => {
+/***/ (function() {
 
 /* (ignored) */
 
 /***/ }),
 
 /***/ 42:
-/***/ (() => {
+/***/ (function() {
 
 /* (ignored) */
 
@@ -7740,7 +7740,7 @@ swizzle.wrap = function (fn) {
 /***/ }),
 
 /***/ 938:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens","-epub-text-combine","-epub-text-emphasis","-epub-text-emphasis-color","-epub-text-emphasis-style","-epub-text-orientation","-epub-text-transform","-epub-word-break","-epub-writing-mode","-internal-text-autosizing-status","accelerator","accent-color","-wap-accesskey","additive-symbols","align-content","-webkit-align-content","align-items","-webkit-align-items","align-self","-webkit-align-self","alignment-baseline","all","alt","-webkit-alt","animation","animation-delay","-moz-animation-delay","-ms-animation-delay","-webkit-animation-delay","animation-direction","-moz-animation-direction","-ms-animation-direction","-webkit-animation-direction","animation-duration","-moz-animation-duration","-ms-animation-duration","-webkit-animation-duration","animation-fill-mode","-moz-animation-fill-mode","-ms-animation-fill-mode","-webkit-animation-fill-mode","animation-iteration-count","-moz-animation-iteration-count","-ms-animation-iteration-count","-webkit-animation-iteration-count","-moz-animation","-ms-animation","animation-name","-moz-animation-name","-ms-animation-name","-webkit-animation-name","animation-play-state","-moz-animation-play-state","-ms-animation-play-state","-webkit-animation-play-state","animation-timing-function","-moz-animation-timing-function","-ms-animation-timing-function","-webkit-animation-timing-function","-webkit-animation-trigger","-webkit-animation","app-region","-webkit-app-region","appearance","-moz-appearance","-webkit-appearance","ascent-override","aspect-ratio","-webkit-aspect-ratio","audio-level","azimuth","backdrop-filter","-webkit-backdrop-filter","backface-visibility","-moz-backface-visibility","-ms-backface-visibility","-webkit-backface-visibility","background","background-attachment","-webkit-background-attachment","background-blend-mode","background-clip","-moz-background-clip","-webkit-background-clip","background-color","-webkit-background-color","-webkit-background-composite","background-image","-webkit-background-image","-moz-background-inline-policy","background-origin","-moz-background-origin","-webkit-background-origin","background-position","-webkit-background-position","background-position-x","-webkit-background-position-x","background-position-y","-webkit-background-position-y","background-repeat","-webkit-background-repeat","background-repeat-x","background-repeat-y","background-size","-moz-background-size","-webkit-background-size","-webkit-background","base-palette","baseline-shift","baseline-source","behavior","-moz-binding","block-ellipsis","-ms-block-progression","block-size","block-step","block-step-align","block-step-insert","block-step-round","block-step-size","bookmark-label","bookmark-level","bookmark-state","border","-webkit-border-after-color","-webkit-border-after-style","-webkit-border-after","-webkit-border-after-width","-webkit-border-before-color","-webkit-border-before-style","-webkit-border-before","-webkit-border-before-width","border-block","border-block-color","border-block-end","border-block-end-color","border-block-end-style","border-block-end-width","border-block-start","border-block-start-color","border-block-start-style","border-block-start-width","border-block-style","border-block-width","border-bottom","border-bottom-color","-moz-border-bottom-colors","border-bottom-left-radius","-webkit-border-bottom-left-radius","border-bottom-right-radius","-webkit-border-bottom-right-radius","border-bottom-style","border-bottom-width","border-boundary","border-collapse","border-color","-moz-border-end-color","-webkit-border-end-color","border-end-end-radius","-moz-border-end","border-end-start-radius","-moz-border-end-style","-webkit-border-end-style","-webkit-border-end","-moz-border-end-width","-webkit-border-end-width","-webkit-border-fit","-webkit-border-horizontal-spacing","border-image","-moz-border-image","-o-border-image","border-image-outset","-webkit-border-image-outset","border-image-repeat","-webkit-border-image-repeat","border-image-slice","-webkit-border-image-slice","border-image-source","-webkit-border-image-source","-webkit-border-image","border-image-width","-webkit-border-image-width","border-inline","border-inline-color","border-inline-end","border-inline-end-color","border-inline-end-style","border-inline-end-width","border-inline-start","border-inline-start-color","border-inline-start-style","border-inline-start-width","border-inline-style","border-inline-width","border-left","border-left-color","-moz-border-left-colors","border-left-style","border-left-width","border-radius","-moz-border-radius-bottomleft","-moz-border-radius-bottomright","-moz-border-radius","-moz-border-radius-topleft","-moz-border-radius-topright","-webkit-border-radius","border-right","border-right-color","-moz-border-right-colors","border-right-style","border-right-width","border-spacing","-moz-border-start-color","-webkit-border-start-color","border-start-end-radius","-moz-border-start","border-start-start-radius","-moz-border-start-style","-webkit-border-start-style","-webkit-border-start","-moz-border-start-width","-webkit-border-start-width","border-style","border-top","border-top-color","-moz-border-top-colors","border-top-left-radius","-webkit-border-top-left-radius","border-top-right-radius","-webkit-border-top-right-radius","border-top-style","border-top-width","-webkit-border-vertical-spacing","border-width","bottom","-moz-box-align","-webkit-box-align","box-decoration-break","-webkit-box-decoration-break","-moz-box-direction","-webkit-box-direction","-webkit-box-flex-group","-moz-box-flex","-webkit-box-flex","-webkit-box-lines","-moz-box-ordinal-group","-webkit-box-ordinal-group","-moz-box-orient","-webkit-box-orient","-moz-box-pack","-webkit-box-pack","-webkit-box-reflect","box-shadow","-moz-box-shadow","-webkit-box-shadow","box-sizing","-moz-box-sizing","-webkit-box-sizing","box-snap","break-after","break-before","break-inside","buffered-rendering","caption-side","caret","caret-color","caret-shape","chains","clear","clip","clip-path","-webkit-clip-path","clip-rule","color","color-adjust","-webkit-color-correction","-apple-color-filter","color-interpolation","color-interpolation-filters","color-profile","color-rendering","color-scheme","-webkit-column-axis","-webkit-column-break-after","-webkit-column-break-before","-webkit-column-break-inside","column-count","-moz-column-count","-webkit-column-count","column-fill","-moz-column-fill","-webkit-column-fill","column-gap","-moz-column-gap","-webkit-column-gap","column-progression","-webkit-column-progression","column-rule","column-rule-color","-moz-column-rule-color","-webkit-column-rule-color","-moz-column-rule","column-rule-style","-moz-column-rule-style","-webkit-column-rule-style","-webkit-column-rule","column-rule-width","-moz-column-rule-width","-webkit-column-rule-width","column-span","-moz-column-span","-webkit-column-span","column-width","-moz-column-width","-webkit-column-width","columns","-moz-columns","-webkit-columns","-webkit-composition-fill-color","-webkit-composition-frame-color","contain","contain-intrinsic-block-size","contain-intrinsic-height","contain-intrinsic-inline-size","contain-intrinsic-size","contain-intrinsic-width","container","container-name","container-type","content","content-visibility","-ms-content-zoom-chaining","-ms-content-zoom-limit-max","-ms-content-zoom-limit-min","-ms-content-zoom-limit","-ms-content-zoom-snap","-ms-content-zoom-snap-points","-ms-content-zoom-snap-type","-ms-content-zooming","continue","counter-increment","counter-reset","counter-set","cue","cue-after","cue-before","cursor","-webkit-cursor-visibility","cx","cy","d","-apple-dashboard-region","-webkit-dashboard-region","descent-override","direction","display","display-align","dominant-baseline","elevation","empty-cells","enable-background","epub-caption-side","epub-hyphens","epub-text-combine","epub-text-emphasis","epub-text-emphasis-color","epub-text-emphasis-style","epub-text-orientation","epub-text-transform","epub-word-break","epub-writing-mode","fallback","fill","fill-break","fill-color","fill-image","fill-opacity","fill-origin","fill-position","fill-repeat","fill-rule","fill-size","filter","-ms-filter","-webkit-filter","flex","-ms-flex-align","-webkit-flex-align","flex-basis","-webkit-flex-basis","flex-direction","-ms-flex-direction","-webkit-flex-direction","flex-flow","-ms-flex-flow","-webkit-flex-flow","flex-grow","-webkit-flex-grow","-ms-flex-item-align","-webkit-flex-item-align","-ms-flex-line-pack","-webkit-flex-line-pack","-ms-flex","-ms-flex-negative","-ms-flex-order","-webkit-flex-order","-ms-flex-pack","-webkit-flex-pack","-ms-flex-positive","-ms-flex-preferred-size","flex-shrink","-webkit-flex-shrink","-webkit-flex","flex-wrap","-ms-flex-wrap","-webkit-flex-wrap","float","float-defer","-moz-float-edge","float-offset","float-reference","flood-color","flood-opacity","flow","flow-from","-ms-flow-from","-webkit-flow-from","flow-into","-ms-flow-into","-webkit-flow-into","font","font-display","font-family","font-feature-settings","-moz-font-feature-settings","-ms-font-feature-settings","-webkit-font-feature-settings","font-kerning","-webkit-font-kerning","font-language-override","-moz-font-language-override","font-optical-sizing","font-palette","font-size","font-size-adjust","-webkit-font-size-delta","-webkit-font-smoothing","font-stretch","font-style","font-synthesis","font-synthesis-small-caps","font-synthesis-style","font-synthesis-weight","font-variant","font-variant-alternates","font-variant-caps","font-variant-east-asian","font-variant-emoji","font-variant-ligatures","-webkit-font-variant-ligatures","font-variant-numeric","font-variant-position","font-variation-settings","font-weight","footnote-display","footnote-policy","-moz-force-broken-image-icon","forced-color-adjust","gap","glyph-orientation-horizontal","glyph-orientation-vertical","grid","-webkit-grid-after","grid-area","grid-auto-columns","-webkit-grid-auto-columns","grid-auto-flow","-webkit-grid-auto-flow","grid-auto-rows","-webkit-grid-auto-rows","-webkit-grid-before","grid-column","-ms-grid-column-align","grid-column-end","grid-column-gap","-ms-grid-column","-ms-grid-column-span","grid-column-start","-webkit-grid-column","-ms-grid-columns","-webkit-grid-columns","-webkit-grid-end","grid-gap","grid-row","-ms-grid-row-align","grid-row-end","grid-row-gap","-ms-grid-row","-ms-grid-row-span","grid-row-start","-webkit-grid-row","-ms-grid-rows","-webkit-grid-rows","-webkit-grid-start","grid-template","grid-template-areas","grid-template-columns","grid-template-rows","hanging-punctuation","height","-ms-high-contrast-adjust","-webkit-highlight","hyphenate-character","-webkit-hyphenate-character","-webkit-hyphenate-limit-after","-webkit-hyphenate-limit-before","hyphenate-limit-chars","-ms-hyphenate-limit-chars","hyphenate-limit-last","hyphenate-limit-lines","-ms-hyphenate-limit-lines","-webkit-hyphenate-limit-lines","hyphenate-limit-zone","-ms-hyphenate-limit-zone","hyphens","-moz-hyphens","-ms-hyphens","-webkit-hyphens","image-orientation","-moz-image-region","image-rendering","image-resolution","-ms-ime-align","ime-mode","inherits","initial-letter","initial-letter-align","-webkit-initial-letter","initial-letter-wrap","initial-value","inline-size","inline-sizing","input-format","-wap-input-format","-wap-input-required","input-security","inset","inset-block","inset-block-end","inset-block-start","inset-inline","inset-inline-end","inset-inline-start","-ms-interpolation-mode","isolation","justify-content","-webkit-justify-content","justify-items","-webkit-justify-items","justify-self","-webkit-justify-self","kerning","layout-flow","layout-grid","layout-grid-char","layout-grid-line","layout-grid-mode","layout-grid-type","leading-trim","left","letter-spacing","lighting-color","-webkit-line-align","-webkit-line-box-contain","line-break","-webkit-line-break","line-clamp","-webkit-line-clamp","line-gap-override","line-grid","-webkit-line-grid-snap","-webkit-line-grid","line-height","line-height-step","line-increment","line-padding","line-snap","-webkit-line-snap","-o-link","-o-link-source","list-style","list-style-image","list-style-position","list-style-type","-webkit-locale","-webkit-logical-height","-webkit-logical-width","margin","-webkit-margin-after-collapse","-webkit-margin-after","-webkit-margin-before-collapse","-webkit-margin-before","margin-block","margin-block-end","margin-block-start","margin-bottom","-webkit-margin-bottom-collapse","margin-break","-webkit-margin-collapse","-moz-margin-end","-webkit-margin-end","margin-inline","margin-inline-end","margin-inline-start","margin-left","margin-right","-moz-margin-start","-webkit-margin-start","margin-top","-webkit-margin-top-collapse","margin-trim","marker","marker-end","marker-knockout-left","marker-knockout-right","marker-mid","marker-offset","marker-pattern","marker-segment","marker-side","marker-start","marks","-wap-marquee-dir","-webkit-marquee-direction","-webkit-marquee-increment","-wap-marquee-loop","-webkit-marquee-repetition","-wap-marquee-speed","-webkit-marquee-speed","-wap-marquee-style","-webkit-marquee-style","-webkit-marquee","mask","-webkit-mask-attachment","mask-border","mask-border-mode","mask-border-outset","mask-border-repeat","mask-border-slice","mask-border-source","mask-border-width","-webkit-mask-box-image-outset","-webkit-mask-box-image-repeat","-webkit-mask-box-image-slice","-webkit-mask-box-image-source","-webkit-mask-box-image","-webkit-mask-box-image-width","mask-clip","-webkit-mask-clip","mask-composite","-webkit-mask-composite","mask-image","-webkit-mask-image","mask-mode","mask-origin","-webkit-mask-origin","mask-position","-webkit-mask-position","mask-position-x","-webkit-mask-position-x","mask-position-y","-webkit-mask-position-y","mask-repeat","-webkit-mask-repeat","-webkit-mask-repeat-x","-webkit-mask-repeat-y","mask-size","-webkit-mask-size","mask-source-type","-webkit-mask-source-type","mask-type","-webkit-mask","-webkit-match-nearest-mail-blockquote-color","math-style","max-block-size","max-height","max-inline-size","max-lines","-webkit-max-logical-height","-webkit-max-logical-width","max-width","max-zoom","min-block-size","min-height","min-inline-size","min-intrinsic-sizing","-webkit-min-logical-height","-webkit-min-logical-width","min-width","min-zoom","mix-blend-mode","motion","motion-offset","motion-path","motion-rotation","nav-down","nav-index","nav-left","nav-right","nav-up","-webkit-nbsp-mode","negative","object-fit","-o-object-fit","object-overflow","object-position","-o-object-position","object-view-box","offset","offset-anchor","offset-block-end","offset-block-start","offset-distance","offset-inline-end","offset-inline-start","offset-path","offset-position","offset-rotate","offset-rotation","opacity","-moz-opacity","-webkit-opacity","order","-webkit-order","-moz-orient","orientation","orphans","-moz-osx-font-smoothing","outline","outline-color","-moz-outline-color","-moz-outline","outline-offset","-moz-outline-offset","-moz-outline-radius-bottomleft","-moz-outline-radius-bottomright","-moz-outline-radius","-moz-outline-radius-topleft","-moz-outline-radius-topright","outline-style","-moz-outline-style","outline-width","-moz-outline-width","overflow","overflow-anchor","overflow-block","overflow-clip-margin","overflow-inline","-webkit-overflow-scrolling","-ms-overflow-style","overflow-wrap","overflow-x","overflow-y","override-colors","overscroll-behavior","overscroll-behavior-block","overscroll-behavior-inline","overscroll-behavior-x","overscroll-behavior-y","pad","padding","-webkit-padding-after","-webkit-padding-before","padding-block","padding-block-end","padding-block-start","padding-bottom","-moz-padding-end","-webkit-padding-end","padding-inline","padding-inline-end","padding-inline-start","padding-left","padding-right","-moz-padding-start","-webkit-padding-start","padding-top","page","page-break-after","page-break-before","page-break-inside","page-orientation","paint-order","pause","pause-after","pause-before","-apple-pay-button-style","-apple-pay-button-type","pen-action","perspective","-moz-perspective","-ms-perspective","perspective-origin","-moz-perspective-origin","-ms-perspective-origin","-webkit-perspective-origin","perspective-origin-x","-webkit-perspective-origin-x","perspective-origin-y","-webkit-perspective-origin-y","-webkit-perspective","pitch","pitch-range","place-content","place-items","place-self","play-during","pointer-events","position","prefix","print-color-adjust","-webkit-print-color-adjust","property-name","quotes","r","range","-webkit-region-break-after","-webkit-region-break-before","-webkit-region-break-inside","region-fragment","-webkit-region-fragment","-webkit-region-overflow","resize","rest","rest-after","rest-before","richness","right","rotate","row-gap","-webkit-rtl-ordering","ruby-align","ruby-merge","ruby-overhang","ruby-position","-webkit-ruby-position","running","rx","ry","scale","scroll-behavior","-ms-scroll-chaining","-ms-scroll-limit","-ms-scroll-limit-x-max","-ms-scroll-limit-x-min","-ms-scroll-limit-y-max","-ms-scroll-limit-y-min","scroll-margin","scroll-margin-block","scroll-margin-block-end","scroll-margin-block-start","scroll-margin-bottom","scroll-margin-inline","scroll-margin-inline-end","scroll-margin-inline-start","scroll-margin-left","scroll-margin-right","scroll-margin-top","scroll-padding","scroll-padding-block","scroll-padding-block-end","scroll-padding-block-start","scroll-padding-bottom","scroll-padding-inline","scroll-padding-inline-end","scroll-padding-inline-start","scroll-padding-left","scroll-padding-right","scroll-padding-top","-ms-scroll-rails","scroll-snap-align","scroll-snap-coordinate","-webkit-scroll-snap-coordinate","scroll-snap-destination","-webkit-scroll-snap-destination","scroll-snap-margin","scroll-snap-margin-bottom","scroll-snap-margin-left","scroll-snap-margin-right","scroll-snap-margin-top","scroll-snap-points-x","-ms-scroll-snap-points-x","-webkit-scroll-snap-points-x","scroll-snap-points-y","-ms-scroll-snap-points-y","-webkit-scroll-snap-points-y","scroll-snap-stop","scroll-snap-type","-ms-scroll-snap-type","-webkit-scroll-snap-type","scroll-snap-type-x","scroll-snap-type-y","-ms-scroll-snap-x","-ms-scroll-snap-y","-ms-scroll-translation","scrollbar-arrow-color","scrollbar-base-color","scrollbar-color","scrollbar-dark-shadow-color","scrollbar-darkshadow-color","scrollbar-face-color","scrollbar-gutter","scrollbar-highlight-color","scrollbar-shadow-color","scrollbar-track-color","scrollbar-width","scrollbar3d-light-color","scrollbar3dlight-color","shape-image-threshold","-webkit-shape-image-threshold","shape-inside","-webkit-shape-inside","shape-margin","-webkit-shape-margin","shape-outside","-webkit-shape-outside","-webkit-shape-padding","shape-rendering","size","size-adjust","snap-height","solid-color","solid-opacity","spatial-navigation-action","spatial-navigation-contain","spatial-navigation-function","speak","speak-as","speak-header","speak-numeral","speak-punctuation","speech-rate","src","-moz-stack-sizing","stop-color","stop-opacity","stress","string-set","stroke","stroke-align","stroke-alignment","stroke-break","stroke-color","stroke-dash-corner","stroke-dash-justify","stroke-dashadjust","stroke-dasharray","stroke-dashcorner","stroke-dashoffset","stroke-image","stroke-linecap","stroke-linejoin","stroke-miterlimit","stroke-opacity","stroke-origin","stroke-position","stroke-repeat","stroke-size","stroke-width","suffix","supported-color-schemes","-webkit-svg-shadow","symbols","syntax","system","tab-size","-moz-tab-size","-o-tab-size","-o-table-baseline","table-layout","-webkit-tap-highlight-color","text-align","text-align-all","text-align-last","-moz-text-align-last","text-anchor","text-autospace","-moz-text-blink","-ms-text-combine-horizontal","text-combine-upright","-webkit-text-combine","text-decoration","text-decoration-blink","text-decoration-color","-moz-text-decoration-color","-webkit-text-decoration-color","text-decoration-line","-moz-text-decoration-line","text-decoration-line-through","-webkit-text-decoration-line","text-decoration-none","text-decoration-overline","text-decoration-skip","text-decoration-skip-box","text-decoration-skip-ink","text-decoration-skip-inset","text-decoration-skip-self","text-decoration-skip-spaces","-webkit-text-decoration-skip","text-decoration-style","-moz-text-decoration-style","-webkit-text-decoration-style","text-decoration-thickness","text-decoration-underline","-webkit-text-decoration","-webkit-text-decorations-in-effect","text-edge","text-emphasis","text-emphasis-color","-webkit-text-emphasis-color","text-emphasis-position","-webkit-text-emphasis-position","text-emphasis-skip","text-emphasis-style","-webkit-text-emphasis-style","-webkit-text-emphasis","-webkit-text-fill-color","text-group-align","text-indent","text-justify","text-justify-trim","text-kashida","text-kashida-space","text-line-through","text-line-through-color","text-line-through-mode","text-line-through-style","text-line-through-width","text-orientation","-webkit-text-orientation","text-overflow","text-overline","text-overline-color","text-overline-mode","text-overline-style","text-overline-width","text-rendering","-webkit-text-security","text-shadow","text-size-adjust","-moz-text-size-adjust","-ms-text-size-adjust","-webkit-text-size-adjust","text-space-collapse","text-space-trim","text-spacing","-webkit-text-stroke-color","-webkit-text-stroke","-webkit-text-stroke-width","text-transform","text-underline","text-underline-color","text-underline-mode","text-underline-offset","text-underline-position","-webkit-text-underline-position","text-underline-style","text-underline-width","text-wrap","-webkit-text-zoom","top","touch-action","touch-action-delay","-ms-touch-action","-webkit-touch-callout","-ms-touch-select","-apple-trailing-word","transform","transform-box","-moz-transform","-ms-transform","-o-transform","transform-origin","-moz-transform-origin","-ms-transform-origin","-o-transform-origin","-webkit-transform-origin","transform-origin-x","-webkit-transform-origin-x","transform-origin-y","-webkit-transform-origin-y","transform-origin-z","-webkit-transform-origin-z","transform-style","-moz-transform-style","-ms-transform-style","-webkit-transform-style","-webkit-transform","transition","transition-delay","-moz-transition-delay","-ms-transition-delay","-o-transition-delay","-webkit-transition-delay","transition-duration","-moz-transition-duration","-ms-transition-duration","-o-transition-duration","-webkit-transition-duration","-moz-transition","-ms-transition","-o-transition","transition-property","-moz-transition-property","-ms-transition-property","-o-transition-property","-webkit-transition-property","transition-timing-function","-moz-transition-timing-function","-ms-transition-timing-function","-o-transition-timing-function","-webkit-transition-timing-function","-webkit-transition","translate","uc-alt-skin","uc-skin","unicode-bidi","unicode-range","-webkit-user-drag","-moz-user-focus","-moz-user-input","-moz-user-modify","-webkit-user-modify","user-select","-moz-user-select","-ms-user-select","-webkit-user-select","user-zoom","vector-effect","vertical-align","viewport-fill","viewport-fill-opacity","viewport-fit","visibility","voice-balance","voice-duration","voice-family","voice-pitch","voice-range","voice-rate","voice-stress","voice-volume","volume","white-space","-webkit-widget-region","widows","width","will-change","-moz-window-dragging","-moz-window-shadow","word-boundary-detection","word-boundary-expansion","word-break","word-spacing","word-wrap","wrap-after","wrap-before","wrap-flow","-ms-wrap-flow","-webkit-wrap-flow","wrap-inside","-ms-wrap-margin","-webkit-wrap-margin","-webkit-wrap-padding","-webkit-wrap-shape-inside","-webkit-wrap-shape-outside","wrap-through","-ms-wrap-through","-webkit-wrap-through","-webkit-wrap","writing-mode","-webkit-writing-mode","x","y","z-index","zoom"]}');
@@ -7778,43 +7778,43 @@ module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens"
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/amd define */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.amdD = function () {
 /******/ 			throw new Error('define cannot be used indirect');
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/amd options */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.amdO = {};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -7823,26 +7823,26 @@ module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens"
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nmd = (module) => {
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
 /******/ 			module.paths = [];
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
+!function() {
 "use strict";
 
 // UNUSED EXPORTS: Button, Canvas, CanvasRenderingContext, EventBridge, Image, ListView, ScrollView, Slider, SyntheticEvent, SyntheticKeyboardEvent, SyntheticMouseEvent, Text, TextInput, View, default
@@ -7853,12 +7853,36 @@ var known_css_properties = __webpack_require__(772);
 var camelcase = __webpack_require__(204);
 var camelcase_default = /*#__PURE__*/__webpack_require__.n(camelcase);
 ;// CONCATENATED MODULE: ./src/lib/NativeMethods.ts
-let Native = __webpack_require__.g["__NativeBindings__"] || {};
-let DefaultExport = Native;
+var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var Native = __webpack_require__.g["__NativeBindings__"] || {};
+var DefaultExport = Native;
 if (false) {}
-/* harmony default export */ const NativeMethods = (DefaultExport);
+/* harmony default export */ var NativeMethods = (DefaultExport);
 
 ;// CONCATENATED MODULE: ./src/lib/SyntheticEvents.ts
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __rest = (undefined && undefined.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -7870,41 +7894,51 @@ var __rest = (undefined && undefined.__rest) || function (s, e) {
         }
     return t;
 };
-class SyntheticEvent {
-    constructor(props) {
+var SyntheticEvent = /** @class */ (function () {
+    function SyntheticEvent(props) {
         this.bubbles = true;
         this.defaultPrevented = false;
-        const { target } = props, other = __rest(props, ["target"]);
+        var target = props.target, other = __rest(props, ["target"]);
         this.target = target;
         this._internal = other;
     }
-    stopPropagation() {
+    SyntheticEvent.prototype.stopPropagation = function () {
         this.bubbles = false;
-    }
-    preventDefault() {
+    };
+    SyntheticEvent.prototype.preventDefault = function () {
         this.defaultPrevented = true;
+    };
+    return SyntheticEvent;
+}());
+
+var SyntheticMouseEvent = /** @class */ (function (_super) {
+    __extends(SyntheticMouseEvent, _super);
+    function SyntheticMouseEvent(props) {
+        var _this = _super.call(this, props) || this;
+        _this.x = _this.clientX = props.x;
+        _this.y = _this.clientY = props.y;
+        _this.screenX = props.screenX;
+        _this.screenY = props.screenY;
+        _this.relatedTarget = props.relatedTarget;
+        return _this;
     }
-}
-class SyntheticMouseEvent extends SyntheticEvent {
-    constructor(props) {
-        super(props);
-        this.x = this.clientX = props.x;
-        this.y = this.clientY = props.y;
-        this.screenX = props.screenX;
-        this.screenY = props.screenY;
-        this.relatedTarget = props.relatedTarget;
+    return SyntheticMouseEvent;
+}(SyntheticEvent));
+
+var SyntheticKeyboardEvent = /** @class */ (function (_super) {
+    __extends(SyntheticKeyboardEvent, _super);
+    function SyntheticKeyboardEvent(props) {
+        var _this = _super.call(this, props) || this;
+        _this.keyCode = props.keyCode;
+        _this.key = props.key;
+        return _this;
     }
-}
-class SyntheticKeyboardEvent extends SyntheticEvent {
-    constructor(props) {
-        super(props);
-        this.keyCode = props.keyCode;
-        this.key = props.key;
-    }
-}
-/* harmony default export */ const SyntheticEvents = ({
-    isMouseEventHandler(key) {
-        const k = key.toLowerCase();
+    return SyntheticKeyboardEvent;
+}(SyntheticEvent));
+
+/* harmony default export */ var SyntheticEvents = ({
+    isMouseEventHandler: function (key) {
+        var k = key.toLowerCase();
         return (k === "onmousedown" ||
             k == "onmouseup" ||
             k == "onmouseenter" ||
@@ -7912,43 +7946,49 @@ class SyntheticKeyboardEvent extends SyntheticEvent {
             k == "onmousedrag" ||
             k == "onmouseclick");
     },
-    isKeyboardEventHandler(key) {
-        const k = key.toLowerCase();
+    isKeyboardEventHandler: function (key) {
+        var k = key.toLowerCase();
         return k === "onkeydown" || k == "onkeyup" || k == "onkeypress";
     },
 });
 
 ;// CONCATENATED MODULE: ./src/lib/MacroProperties/util.ts
+var __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 // don't try too hard, we don't need to support qouted strings containing commas etc.
-const splitArgs = (a) => {
-    const argArray = a.trim().split(/\s*,\s*/);
+var splitArgs = function (a) {
+    var argArray = a.trim().split(/\s*,\s*/);
     if (argArray.length === 1 && argArray[0] === "")
         return [];
     return argArray;
 };
-const getMacroCalls = (s) => {
-    const macroMatcher = String.raw `([a-zA-Z0-9]+)\(([^)]*)\)`;
-    let r = new RegExp(macroMatcher, "g");
+var getMacroCalls = function (s) {
+    var macroMatcher = String.raw(templateObject_1 || (templateObject_1 = __makeTemplateObject(["([a-zA-Z0-9]+)(([^)]*))"], ["([a-zA-Z0-9]+)\\(([^)]*)\\)"])));
+    var r = new RegExp(macroMatcher, "g");
     // the rest would be trivial with matchAll
     // which duktape sadly lacks
-    const matches = s.match(r);
+    var matches = s.match(r);
     if (!matches)
         return [];
     // unset "g" flag, otherwise r.exec returns null when multiple matches occurred
     r = new RegExp(macroMatcher);
-    const macroCalls = [];
-    for (const match of matches) {
+    var macroCalls = [];
+    for (var _i = 0, matches_1 = matches; _i < matches_1.length; _i++) {
+        var match = matches_1[_i];
         // @ts-ignore
-        const [, macro, args] = r.exec(match);
+        var _a = r.exec(match), macro = _a[1], args = _a[2];
         macroCalls.push({
             // @ts-ignore
-            macro,
+            macro: macro,
             // @ts-ignore
             args: splitArgs(args),
         });
     }
     return macroCalls;
 };
+var templateObject_1;
 
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
@@ -13007,7 +13047,7 @@ var Decimal = P.constructor = decimal_clone(DEFAULTS);
 LN10 = new Decimal(LN10);
 PI = new Decimal(PI);
 
-/* harmony default export */ const decimal = (Decimal);
+/* harmony default export */ var decimal = (Decimal);
 
 ;// CONCATENATED MODULE: ./node_modules/mathjs/lib/esm/utils/is.js
 // type checks for all known types
@@ -54495,19 +54535,28 @@ var planckTime = /* #__PURE__ */createPlanckTime({
   config: config
 });
 ;// CONCATENATED MODULE: ./src/lib/MacroProperties/Transform.ts
+var Transform_spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 
 
-const rotateMultipliers = {
+var rotateMultipliers = {
     deg: Math.PI / 180.0,
     grad: Math.PI / 200.0,
     rad: 1,
     turn: 2 * Math.PI,
 };
-const angleUnitMatcher = new RegExp(`(-?[0-9]*\.?[0-9]+)(${Object.keys(rotateMultipliers).join("|")}|)$`);
-const toRadians = (arg) => {
+var angleUnitMatcher = new RegExp("(-?[0-9]*.?[0-9]+)(".concat(Object.keys(rotateMultipliers).join("|"), "|)$"));
+var toRadians = function (arg) {
     // @ts-ignore
-    let [, angle, unit] = angleUnitMatcher.exec(arg);
-    let angleFloat = parseFloat(angle);
+    var _a = angleUnitMatcher.exec(arg), angle = _a[1], unit = _a[2];
+    var angleFloat = parseFloat(angle);
     if (angleFloat === NaN)
         return NaN;
     if (unit === "" && angleFloat !== 0)
@@ -54515,22 +54564,34 @@ const toRadians = (arg) => {
     angleFloat *= rotateMultipliers[unit] || 1;
     return angleFloat;
 };
-const stringArgsToFloat = (...args) => args.map(parseFloat);
-const stringArgsToRadians = (...args) => args.map(toRadians);
-const Transform_identity = matrix([
+var stringArgsToFloat = function () {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    return args.map(parseFloat);
+};
+var stringArgsToRadians = function () {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    return args.map(toRadians);
+};
+var Transform_identity = matrix([
     [1, 0, 0, 0],
     [0, 1, 0, 0],
     [0, 0, 1, 0],
     [0, 0, 0, 1],
 ]);
-const rotate3d = (x, y, z, theta) => {
-    const sinTheta = Math.sin(theta);
-    const cosTheta = Math.cos(theta);
-    const r = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
+var rotate3d = function (x, y, z, theta) {
+    var sinTheta = Math.sin(theta);
+    var cosTheta = Math.cos(theta);
+    var r = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
     if (r === 0) {
         return Transform_identity;
     }
-    const [u, v, w] = [x / r, y / r, z / r];
+    var _a = [x / r, y / r, z / r], u = _a[0], v = _a[1], w = _a[2];
     return matrix([
         [
             cosTheta + (1 - cosTheta) * Math.pow(u, 2),
@@ -54553,22 +54614,42 @@ const rotate3d = (x, y, z, theta) => {
         [0, 0, 0, 1],
     ]);
 };
-const rotateX = (theta) => rotate3d(1, 0, 0, theta);
-const rotateY = (theta) => rotate3d(0, 1, 0, theta);
-const rotateZ = (theta) => rotate3d(0, 0, 1, theta);
-const scale3d = (sx = 1, sy = 1, sz = 1) => matrix([
-    [sx, 0, 0, 0],
-    [0, sy, 0, 0],
-    [0, 0, sz, 0],
-    [0, 0, 0, 1],
-]);
-const scale = (sx = 1, sy = 1) => scale3d(sx, sy);
-const scaleX = (sx = 1) => scale(sx);
-const scaleY = (sy = 1) => scale(1, sy);
-const scaleZ = (sz = 1) => scale3d(1, 1, sz);
-const skew = (alpha = 0, beta = 0) => {
-    const tanAlpha = Math.tan(alpha) || 0;
-    const tanBeta = Math.tan(beta) || 0;
+var rotateX = function (theta) { return rotate3d(1, 0, 0, theta); };
+var rotateY = function (theta) { return rotate3d(0, 1, 0, theta); };
+var rotateZ = function (theta) { return rotate3d(0, 0, 1, theta); };
+var scale3d = function (sx, sy, sz) {
+    if (sx === void 0) { sx = 1; }
+    if (sy === void 0) { sy = 1; }
+    if (sz === void 0) { sz = 1; }
+    return matrix([
+        [sx, 0, 0, 0],
+        [0, sy, 0, 0],
+        [0, 0, sz, 0],
+        [0, 0, 0, 1],
+    ]);
+};
+var scale = function (sx, sy) {
+    if (sx === void 0) { sx = 1; }
+    if (sy === void 0) { sy = 1; }
+    return scale3d(sx, sy);
+};
+var scaleX = function (sx) {
+    if (sx === void 0) { sx = 1; }
+    return scale(sx);
+};
+var scaleY = function (sy) {
+    if (sy === void 0) { sy = 1; }
+    return scale(1, sy);
+};
+var scaleZ = function (sz) {
+    if (sz === void 0) { sz = 1; }
+    return scale3d(1, 1, sz);
+};
+var skew = function (alpha, beta) {
+    if (alpha === void 0) { alpha = 0; }
+    if (beta === void 0) { beta = 0; }
+    var tanAlpha = Math.tan(alpha) || 0;
+    var tanBeta = Math.tan(beta) || 0;
     return matrix([
         [1 + tanAlpha * tanBeta, tanAlpha, 0, 0],
         [tanBeta, 1, 0, 0],
@@ -54576,26 +54657,43 @@ const skew = (alpha = 0, beta = 0) => {
         [0, 0, 0, 1],
     ]);
 };
-const skewX = (theta) => skew(theta);
-const skewY = (theta) => skew(0, theta);
-const translate3d = (dx = 0, dy = 0, dz = 0) => matrix([
-    [1, 0, 0, dx],
-    [0, 1, 0, dy],
-    [0, 0, 1, dz],
-    [0, 0, 0, 1],
-]);
-const translate = (dx = 0, dy = 0) => translate3d(dx, dy, 0);
-const translateX = (dx = 0) => translate3d(dx);
-const translateY = (dy = 0) => translate3d(0, dy);
-const translateZ = (dz = 0) => translate3d(0, 0, dz);
-const argsTransformMap = {
+var skewX = function (theta) { return skew(theta); };
+var skewY = function (theta) { return skew(0, theta); };
+var translate3d = function (dx, dy, dz) {
+    if (dx === void 0) { dx = 0; }
+    if (dy === void 0) { dy = 0; }
+    if (dz === void 0) { dz = 0; }
+    return matrix([
+        [1, 0, 0, dx],
+        [0, 1, 0, dy],
+        [0, 0, 1, dz],
+        [0, 0, 0, 1],
+    ]);
+};
+var translate = function (dx, dy) {
+    if (dx === void 0) { dx = 0; }
+    if (dy === void 0) { dy = 0; }
+    return translate3d(dx, dy, 0);
+};
+var translateX = function (dx) {
+    if (dx === void 0) { dx = 0; }
+    return translate3d(dx);
+};
+var translateY = function (dy) {
+    if (dy === void 0) { dy = 0; }
+    return translate3d(0, dy);
+};
+var translateZ = function (dz) {
+    if (dz === void 0) { dz = 0; }
+    return translate3d(0, 0, dz);
+};
+var argsTransformMap = {
     matrix: stringArgsToFloat,
     matrix3d: stringArgsToFloat,
     rotate: stringArgsToRadians,
-    rotate3d: (x, y, z, t) => [
-        ...stringArgsToFloat(x, y, z),
+    rotate3d: function (x, y, z, t) { return Transform_spreadArray(Transform_spreadArray([], stringArgsToFloat(x, y, z), true), [
         toRadians(t),
-    ],
+    ], false); },
     rotateX: stringArgsToRadians,
     rotateY: stringArgsToRadians,
     rotateZ: stringArgsToRadians,
@@ -54613,45 +54711,48 @@ const argsTransformMap = {
     translateY: stringArgsToFloat,
     translateZ: stringArgsToFloat,
 };
-const transformMatrixMap = {
+var transformMatrixMap = {
     none: Transform_identity,
-    matrix: (l11, l12, dx, l21, l22, dy) => matrix([
-        [l11, l12, 0, dx],
-        [l21, l22, 0, dy],
-        [0, 0, 1, 0],
-        [0, 0, 0, 1],
-    ]),
-    matrix3d: (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44) => matrix([
-        [m11, m12, m13, m14],
-        [m21, m22, m23, m24],
-        [m31, m32, m33, m34],
-        [m41, m42, m43, m44],
-    ]),
+    matrix: function (l11, l12, dx, l21, l22, dy) {
+        return matrix([
+            [l11, l12, 0, dx],
+            [l21, l22, 0, dy],
+            [0, 0, 1, 0],
+            [0, 0, 0, 1],
+        ]);
+    },
+    matrix3d: function (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44) {
+        return matrix([
+            [m11, m12, m13, m14],
+            [m21, m22, m23, m24],
+            [m31, m32, m33, m34],
+            [m41, m42, m43, m44],
+        ]);
+    },
     // perspective: ()=>identity, // TODO
     rotate: rotateZ,
-    rotateX,
-    rotateY,
-    rotateZ,
-    scale,
-    scale3d,
-    scaleX,
-    scaleY,
-    scaleZ,
-    skew,
-    skewX,
-    skewY,
-    translate,
-    translate3d,
-    translateX,
-    translateY,
-    translateZ,
+    rotateX: rotateX,
+    rotateY: rotateY,
+    rotateZ: rotateZ,
+    scale: scale,
+    scale3d: scale3d,
+    scaleX: scaleX,
+    scaleY: scaleY,
+    scaleZ: scaleZ,
+    skew: skew,
+    skewX: skewX,
+    skewY: skewY,
+    translate: translate,
+    translate3d: translate3d,
+    translateX: translateX,
+    translateY: translateY,
+    translateZ: translateZ,
 };
-const matrixToArray = (m) => m().reduce((acc, v) => [
-    ...acc,
-    ...v,
-]);
+var matrixToArray = function (m) {
+    return m().reduce(function (acc, v) { return Transform_spreadArray(Transform_spreadArray([], acc, true), v, true); });
+};
 /* harmony default export */ function Transform(value) {
-    const calls = getMacroCalls(value);
+    var calls = getMacroCalls(value);
     // operations performed right to left
     // i.e. transform: translateY(20) rotate(90deg)
     // means rotate 90 degrees, then translate up 20
@@ -54659,12 +54760,14 @@ const matrixToArray = (m) => m().reduce((acc, v) => [
     // has the translation first followed by the rotate.
     calls.reverse();
     //@ts-ignore
-    const transformMatrix = calls.reduce((acc, { macro: f, args }) => {
+    var transformMatrix = calls.reduce(function (acc, _a) {
+        var _b;
+        var f = _a.macro, args = _a.args;
         if (!transformMatrixMap.hasOwnProperty(f)) {
             return acc;
         }
-        const argsTransform = argsTransformMap[f] || (() => args);
-        const transform = transformMatrixMap[f](...argsTransform(...args));
+        var argsTransform = argsTransformMap[f] || (function () { return args; });
+        var transform = (_b = transformMatrixMap)[f].apply(_b, argsTransform.apply(void 0, args));
         return matrix(transform.prod(acc));
     }, Transform_identity);
     return [["transform-matrix", matrixToArray(transformMatrix)]];
@@ -54672,7 +54775,7 @@ const matrixToArray = (m) => m().reduce((acc, v) => [
 
 ;// CONCATENATED MODULE: ./src/lib/MacroProperties/index.ts
 
-const macroPropertyGetters = {
+var macroPropertyGetters = {
     transform: Transform,
 };
 
@@ -54685,119 +54788,119 @@ var color_name_default = /*#__PURE__*/__webpack_require__.n(color_name);
 ;// CONCATENATED MODULE: ./src/lib/MacroProperties/Colors.ts
 
 
-const COLOR_PROPERTIES = ["border-color", "background-color", "color"];
-const isColorProperty = (propKey) => {
+var COLOR_PROPERTIES = ["border-color", "background-color", "color"];
+var isColorProperty = function (propKey) {
     return COLOR_PROPERTIES.includes(propKey);
 };
-const colorStringToAlphaHex = (colorString) => {
+var colorStringToAlphaHex = function (colorString) {
     //From Hex
     if (colorString.startsWith("#") && colorString.length === 7) {
-        return `ff${colorString}`.replace("#", "");
+        return "ff".concat(colorString).replace("#", "");
     }
     //From RGB or RGBA
     else if (colorString.startsWith("rgb")) {
-        const rgbValues = colorString
+        var rgbValues = colorString
             .split("(")[1]
             .split(")")[0]
             .replace(/ /g, "")
             .split(",");
-        const alphaValue = rgbValues.length === 4
+        var alphaValue = rgbValues.length === 4
             ? //@ts-ignore
                 percentToHex(100 * rgbValues.pop())
             : "ff";
-        const hex = rgbValues.map((color) => {
-            const hex = Number.parseInt(color).toString(16);
+        var hex = rgbValues.map(function (color) {
+            var hex = Number.parseInt(color).toString(16);
             return hex.length == 1 ? "0" + hex : hex;
         });
         return alphaValue + hex.join("");
     }
     //From HSL or HSLA
     else if (colorString.startsWith("hsl")) {
-        const hslValues = colorString
+        var hslValues = colorString
             .split("(")[1]
             .split(")")[0]
             .replace(/ |[%]/g, "")
             .split(",");
-        const alphaValue = hslValues.length === 4
+        var alphaValue = hslValues.length === 4
             ? //@ts-ignore
                 percentToHex(100 * hslValues.pop())
             : "ff";
-        const hex = hslToHex(Number.parseInt(hslValues[0]), Number.parseInt(hslValues[1]), Number.parseInt(hslValues[2]));
+        var hex = hslToHex(Number.parseInt(hslValues[0]), Number.parseInt(hslValues[1]), Number.parseInt(hslValues[2]));
         return alphaValue + hex;
     }
     //From Linear Gradient
     else if (colorString.startsWith("linear-gradient")) {
-        const lgValues = colorString
+        var lgValues_1 = colorString
             .split(/\((.+)/)[1]
             .split(/\)$/)[0]
             .split(/,+(?![^\(]*\))/)
-            .map((item) => {
+            .map(function (item) {
             return item.split(" ");
         });
         //concat any arrays that contain hsl or rba strings
-        lgValues.forEach((itemArr, idx) => {
-            if (itemArr.find((item) => item.includes("(")) !== undefined) {
-                const itemArrClone = itemArr.slice();
-                const startIdx = itemArrClone.findIndex((item) => item.includes("("));
-                const endIdx = itemArrClone.findIndex((item) => item.includes(")"));
-                const colorHSLRGB = itemArrClone.slice(startIdx, endIdx + 1).join("");
+        lgValues_1.forEach(function (itemArr, idx) {
+            if (itemArr.find(function (item) { return item.includes("("); }) !== undefined) {
+                var itemArrClone = itemArr.slice();
+                var startIdx = itemArrClone.findIndex(function (item) { return item.includes("("); });
+                var endIdx = itemArrClone.findIndex(function (item) { return item.includes(")"); });
+                var colorHSLRGB = itemArrClone.slice(startIdx, endIdx + 1).join("");
                 itemArr.splice(startIdx, endIdx + 1, colorHSLRGB);
-                lgValues[idx] = itemArr;
+                lgValues_1[idx] = itemArr;
             }
             else {
-                lgValues[idx] = itemArr;
+                lgValues_1[idx] = itemArr;
             }
         });
         //flatten array
-        const lgValuesCleaned = [].concat
+        var lgValuesCleaned_1 = [].concat
             // @ts-ignore
-            .apply([], lgValues)
-            .filter((item) => {
+            .apply([], lgValues_1)
+            .filter(function (item) {
             return item != "";
         });
         //converts any colorStrings in linear gradient to alpha-hex
-        let skipCurrentIdx = -1;
-        const lgValuesConverted = lgValuesCleaned
-            .map((value, idx) => {
-            if (skipCurrentIdx == idx)
+        var skipCurrentIdx_1 = -1;
+        var lgValuesConverted = lgValuesCleaned_1
+            .map(function (value, idx) {
+            if (skipCurrentIdx_1 == idx)
                 return;
             // @ts-ignore
-            let convertedColorString = colorStringToAlphaHex(value);
+            var convertedColorString = colorStringToAlphaHex(value);
             //check if the next element is a percent and attach to current and remove it
-            const nextIdx = idx + 1;
-            if (lgValuesCleaned[nextIdx] !== undefined &&
-                lgValuesCleaned[nextIdx].includes("%") &&
-                !lgValuesCleaned[nextIdx].includes("(")) {
-                convertedColorString += lgValuesCleaned[nextIdx];
-                skipCurrentIdx = nextIdx;
+            var nextIdx = idx + 1;
+            if (lgValuesCleaned_1[nextIdx] !== undefined &&
+                lgValuesCleaned_1[nextIdx].includes("%") &&
+                !lgValuesCleaned_1[nextIdx].includes("(")) {
+                convertedColorString += lgValuesCleaned_1[nextIdx];
+                skipCurrentIdx_1 = nextIdx;
             }
             return convertedColorString;
         })
-            .filter((item) => {
+            .filter(function (item) {
             return item !== undefined;
         });
         return "linear-gradient(" + lgValuesConverted.join(",") + ")";
     }
     //From Named Colours
     else if (Object.keys((color_name_default())).includes(colorString)) {
-        const rgbValues = color_string_default().get.rgb(colorString);
-        const hex = color_string_default().to.hex(rgbValues);
+        var rgbValues = color_string_default().get.rgb(colorString);
+        var hex = color_string_default().to.hex(rgbValues);
         return colorStringToAlphaHex(hex);
     }
     else {
         return colorString;
     }
 };
-const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
-    const linearGradientNativeObject = {};
-    const lgValues = lgColorStringHex
+var convertLinearGradientStringToNativeObject = function (lgColorStringHex) {
+    var linearGradientNativeObject = {};
+    var lgValues = lgColorStringHex
         .split(/\((.+)/)[1]
         .split(/\)$/)[0]
         .replace(/ /g, "")
         .split(/,+(?![^\(]*\))/);
     //Check for directional words
-    let angle = 0;
-    let rotation = lgValues[0];
+    var angle = 0;
+    var rotation = lgValues[0];
     if (rotation == "toleft")
         angle = 270;
     if (rotation == "toright")
@@ -54818,7 +54921,7 @@ const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
     //Check for Turns
     if (rotation.includes("turn")) {
         rotation = rotation.replace("turn", "");
-        const turns = parseFloat(rotation);
+        var turns = parseFloat(rotation);
         angle = 360 * turns;
     }
     //Check for Degrees
@@ -54828,12 +54931,12 @@ const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
     }
     linearGradientNativeObject["angle"] = angle;
     linearGradientNativeObject["colours"] = [];
-    const colorPositions = lgValues.slice(1);
-    colorPositions.forEach((colorPos, idx) => {
-        const hexPosObj = { id: idx };
-        const hex = colorPos.slice(0, 8);
+    var colorPositions = lgValues.slice(1);
+    colorPositions.forEach(function (colorPos, idx) {
+        var hexPosObj = { id: idx };
+        var hex = colorPos.slice(0, 8);
         //check string is an alpha hex
-        const isValidAlphaHex = 
+        var isValidAlphaHex = 
         // @ts-ignore
         hex.match(/^[0-9a-fA-F]{8}$|#[0-9a-fA-F]{6}$|#[0-9a-fA-F]{4}$|#[0-9a-fA-F]{3}$/).length > 0;
         if (!isValidAlphaHex)
@@ -54842,10 +54945,10 @@ const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
         if (colorPos.includes("%")) {
             colorPos = colorPos.replace("%", "");
             // @ts-ignore
-            let colorPercent = parseInt(colorPos) / 100;
+            var colorPercent = parseInt(colorPos) / 100;
             //check if previous percent is greater or equal to the current
             if (linearGradientNativeObject["colours"].length > 0) {
-                const previousPos = linearGradientNativeObject["colours"][idx - 1]["position"];
+                var previousPos = linearGradientNativeObject["colours"][idx - 1]["position"];
                 if (previousPos >= colorPercent)
                     colorPercent = previousPos + 0.001;
             }
@@ -54867,24 +54970,28 @@ const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
         linearGradientNativeObject["colours"].push(hexPosObj);
     });
     //Find half way between previous and next given percent if no percentage assigned
-    linearGradientNativeObject["colours"].forEach((colorPos, idx) => {
+    linearGradientNativeObject["colours"].forEach(function (colorPos, idx) {
         if (colorPos["position"] === undefined) {
             //find next color with percentage
-            const colorsClone = JSON.parse(JSON.stringify(linearGradientNativeObject["colours"]));
-            let currentArrayChunk = colorsClone.splice(idx);
-            const nextColorPercent = currentArrayChunk.find((colorPos) => colorPos["position"] != undefined && colorPos["id"] !== 0);
-            const nextColorPercentIdx = currentArrayChunk.findIndex((colorPos) => colorPos["position"] != undefined && colorPos["id"] !== 0);
+            var colorsClone = JSON.parse(JSON.stringify(linearGradientNativeObject["colours"]));
+            var currentArrayChunk = colorsClone.splice(idx);
+            var nextColorPercent = currentArrayChunk.find(function (colorPos) {
+                return colorPos["position"] != undefined && colorPos["id"] !== 0;
+            });
+            var nextColorPercentIdx = currentArrayChunk.findIndex(function (colorPos) {
+                return colorPos["position"] != undefined && colorPos["id"] !== 0;
+            });
             currentArrayChunk = currentArrayChunk.splice(0, nextColorPercentIdx + 1);
-            const previousColorPercent = colorsClone[idx - 1];
-            const y = nextColorPercent["position"];
-            const x = previousColorPercent["position"];
-            const n = currentArrayChunk.length + 1;
+            var previousColorPercent = colorsClone[idx - 1];
+            var y_1 = nextColorPercent["position"];
+            var x_1 = previousColorPercent["position"];
+            var n_1 = currentArrayChunk.length + 1;
             //assign evenly distributed values to each undefined color in current array chunk
-            currentArrayChunk.forEach((colorPosChunk, idx) => {
+            currentArrayChunk.forEach(function (colorPosChunk, idx) {
                 idx += 1;
                 if (colorPosChunk["position"] === undefined) {
-                    const colorPosition = x + ((y - x) / (n - 1)) * idx;
-                    const colorPosObj = linearGradientNativeObject["colours"][colorPosChunk["id"]];
+                    var colorPosition = x_1 + ((y_1 - x_1) / (n_1 - 1)) * idx;
+                    var colorPosObj = linearGradientNativeObject["colours"][colorPosChunk["id"]];
                     colorPosObj["position"] = colorPosition;
                 }
             });
@@ -54892,47 +54999,59 @@ const convertLinearGradientStringToNativeObject = (lgColorStringHex) => {
     });
     return linearGradientNativeObject;
 };
-const hslToHex = (h, s, l) => {
+var hslToHex = function (h, s, l) {
     l /= 100;
-    const a = (s * Math.min(l, 1 - l)) / 100;
-    const f = (n) => {
-        const k = (n + h / 30) % 12;
-        const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    var a = (s * Math.min(l, 1 - l)) / 100;
+    var f = function (n) {
+        var k = (n + h / 30) % 12;
+        var color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
         return Math.round(255 * color)
             .toString(16)
             .padStart(2, "0");
     };
-    return `${f(0)}${f(8)}${f(4)}`;
+    return "".concat(f(0)).concat(f(8)).concat(f(4));
 };
-const percentToHex = (p) => {
+var percentToHex = function (p) {
     p = p > 100 ? 100 : p;
-    const intValue = Math.round((p / 100) * 255);
-    const hexValue = intValue.toString(16);
+    var intValue = Math.round((p / 100) * 255);
+    var hexValue = intValue.toString(16);
     return hexValue.padStart(2, "0").toLowerCase();
 };
-/* harmony default export */ const Colors = ({
-    isColorProperty,
-    colorStringToAlphaHex,
-    convertLinearGradientStringToNativeObject,
+/* harmony default export */ var Colors = ({
+    isColorProperty: isColorProperty,
+    colorStringToAlphaHex: colorStringToAlphaHex,
+    convertLinearGradientStringToNativeObject: convertLinearGradientStringToNativeObject,
 });
 
 ;// CONCATENATED MODULE: ./src/lib/Backend.ts
+var Backend_spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 
 
 
 
 
 
-let __rootViewInstance = null;
-let __viewRegistry = new Map();
-let __lastMouseDownViewId = null;
+var __rootViewInstance = null;
+var __viewRegistry = new Map();
+var __lastMouseDownViewId = null;
 // get any css properties not beginning with a "-",
 // and build a map from any camelCase versions to
 // the hyphenated version
-const cssPropsMap = known_css_properties.all.filter((s) => !s.startsWith("-") && s.includes("-"))
-    .reduce((acc, v) => Object.assign(acc, { [camelcase_default()(v)]: v }), {});
-class ViewInstance {
-    constructor(id, type, props, parent) {
+var cssPropsMap = known_css_properties.all.filter(function (s) { return !s.startsWith("-") && s.includes("-"); })
+    .reduce(function (acc, v) {
+    var _a;
+    return Object.assign(acc, (_a = {}, _a[camelcase_default()(v)] = v, _a));
+}, {});
+var ViewInstance = /** @class */ (function () {
+    function ViewInstance(id, type, props, parent) {
         this._props = null;
         this._parent = null;
         this._id = id;
@@ -54949,56 +55068,57 @@ class ViewInstance {
         //      here but Duktape does not fully support Reflect at the moment.
         this.contains = this.contains.bind(this);
     }
-    getViewId() {
+    ViewInstance.prototype.getViewId = function () {
         return this._id;
-    }
-    getType() {
+    };
+    ViewInstance.prototype.getType = function () {
         return this._type;
-    }
-    getChildIndex(childInstance) {
-        for (let i = 0; i < this._children.length; ++i) {
+    };
+    ViewInstance.prototype.getChildIndex = function (childInstance) {
+        for (var i = 0; i < this._children.length; ++i) {
             if (this._children[i] === childInstance) {
                 return i;
             }
         }
         return -1;
-    }
-    appendChild(childInstance) {
+    };
+    ViewInstance.prototype.appendChild = function (childInstance) {
         childInstance._parent = this;
         this._children.push(childInstance);
         //@ts-ignore
         return NativeMethods.insertChild(this._id, childInstance._id, -1);
-    }
-    insertChild(childInstance, index) {
+    };
+    ViewInstance.prototype.insertChild = function (childInstance, index) {
         childInstance._parent = this;
         this._children.splice(index, 0, childInstance);
         //@ts-ignore
         return NativeMethods.insertChild(this._id, childInstance._id, index);
-    }
-    removeChild(childInstance) {
-        const index = this._children.indexOf(childInstance);
+    };
+    ViewInstance.prototype.removeChild = function (childInstance) {
+        var index = this._children.indexOf(childInstance);
         if (index >= 0) {
             this._children.splice(index, 1);
             __viewRegistry.delete(childInstance.getViewId());
             //@ts-ignore
             return NativeMethods.removeChild(this._id, childInstance._id);
         }
-    }
-    setProperty(propKey, value) {
+    };
+    ViewInstance.prototype.setProperty = function (propKey, value) {
+        var _a;
         // if the supplied propkey is a camelCase equivalent
         // of a css prop, first convert it to kebab-case
         propKey = cssPropsMap[propKey] || propKey;
         // convert provided color string to alpha-hex code for JUCE
-        let nativeValue;
+        var nativeValue;
         if (Colors.isColorProperty(propKey)) {
             value = Colors.colorStringToAlphaHex(value);
             if (value.startsWith("linear-gradient")) {
                 nativeValue = Colors.convertLinearGradientStringToNativeObject(value);
             }
         }
-        this._props = Object.assign({}, this._props, {
-            [propKey]: value,
-        });
+        this._props = Object.assign({}, this._props, (_a = {},
+            _a[propKey] = value,
+            _a));
         // Our React Ref equivalent. This is needed
         // as it appears the 'ref' prop isn't passed through
         // to our renderer's setProperty from the reconciler.
@@ -55013,9 +55133,13 @@ class ViewInstance {
                     if (prop in target) {
                         return target[prop];
                     }
-                    return function (...args) {
+                    return function () {
+                        var args = [];
+                        for (var _i = 0; _i < arguments.length; _i++) {
+                            args[_i] = arguments[_i];
+                        }
                         //@ts-ignore
-                        return NativeMethods.invokeViewMethod(target._id, prop, ...args);
+                        return NativeMethods.invokeViewMethod.apply(NativeMethods, Backend_spreadArray([target._id, prop], args, false));
                     };
                 },
             });
@@ -55023,50 +55147,56 @@ class ViewInstance {
         }
         if (macroPropertyGetters.hasOwnProperty(propKey)) {
             //@ts-ignore
-            for (const [k, v] of macroPropertyGetters[propKey](value))
+            for (var _i = 0, _b = macroPropertyGetters[propKey](value); _i < _b.length; _i++) {
+                var _c = _b[_i], k = _c[0], v = _c[1];
                 NativeMethods.setViewProperty(this._id, k, v);
+            }
             return;
         }
         //@ts-ignore
         return NativeMethods.setViewProperty(this._id, propKey, nativeValue ? nativeValue : value);
-    }
-    contains(node) {
+    };
+    ViewInstance.prototype.contains = function (node) {
         if (node === this) {
             return true;
         }
-        for (let i = 0; i < this._children.length; ++i) {
-            const child = this._children[i];
+        for (var i = 0; i < this._children.length; ++i) {
+            var child = this._children[i];
             // A ViewInstance may hold RawTextViewInstances but a
             // RawTextViewInstance contains no children.
             if (child instanceof ViewInstance && child.contains(node))
                 return true;
         }
         return false;
-    }
-}
-class RawTextViewInstance {
-    constructor(id, text, parent) {
+    };
+    return ViewInstance;
+}());
+
+var RawTextViewInstance = /** @class */ (function () {
+    function RawTextViewInstance(id, text, parent) {
         this._id = id;
         this._text = text;
         this._parent = parent;
     }
-    getViewId() {
+    RawTextViewInstance.prototype.getViewId = function () {
         return this._id;
-    }
-    getText() {
+    };
+    RawTextViewInstance.prototype.getText = function () {
         return this._text;
-    }
-    setTextValue(text) {
+    };
+    RawTextViewInstance.prototype.setTextValue = function (text) {
         this._text = text;
         //@ts-ignore
         return NativeMethods.setRawTextValue(this._id, text);
-    }
-}
+    };
+    return RawTextViewInstance;
+}());
+
 function __getRootContainer() {
     if (__rootViewInstance !== null)
         return __rootViewInstance;
     //@ts-ignore
-    const id = NativeMethods.getRootInstanceId();
+    var id = NativeMethods.getRootInstanceId();
     __rootViewInstance = new ViewInstance(id, "View");
     return __rootViewInstance;
 }
@@ -55090,7 +55220,7 @@ function __bubbleEvent(view, eventType, event) {
 //@ts-ignore
 NativeMethods.dispatchViewEvent = function dispatchEvent(viewId, eventType, event) {
     if (__viewRegistry.hasOwnProperty(viewId)) {
-        const instance = __viewRegistry.get(viewId);
+        var instance = __viewRegistry.get(viewId);
         // Convert target/relatedTarget to concrete ViewInstance refs
         if (event.target && __viewRegistry.hasOwnProperty(event.target)) {
             event.target = __viewRegistry.get(event.target);
@@ -55122,25 +55252,25 @@ NativeMethods.dispatchViewEvent = function dispatchEvent(viewId, eventType, even
         __bubbleEvent(instance, eventType, event);
     }
 };
-/* harmony default export */ const Backend = ({
-    getRootContainer() {
+/* harmony default export */ var Backend = ({
+    getRootContainer: function () {
         return __getRootContainer();
     },
-    createViewInstance(viewType, props, parentInstance) {
+    createViewInstance: function (viewType, props, parentInstance) {
         //@ts-ignore
-        const id = NativeMethods.createViewInstance(viewType);
-        const instance = new ViewInstance(id, viewType, props, parentInstance);
+        var id = NativeMethods.createViewInstance(viewType);
+        var instance = new ViewInstance(id, viewType, props, parentInstance);
         __viewRegistry.set(id, instance);
         return instance;
     },
-    createTextViewInstance(text, parentInstance) {
+    createTextViewInstance: function (text, parentInstance) {
         //@ts-ignore
-        const id = NativeMethods.createTextViewInstance(text);
-        const instance = new RawTextViewInstance(id, text, parentInstance);
+        var id = NativeMethods.createTextViewInstance(text);
+        var instance = new RawTextViewInstance(id, text, parentInstance);
         __viewRegistry.set(id, instance);
         return instance;
     },
-    resetAfterCommit() {
+    resetAfterCommit: function () {
         //@ts-ignore
         return NativeMethods.resetAfterCommit();
     },
@@ -55148,26 +55278,45 @@ NativeMethods.dispatchViewEvent = function dispatchEvent(viewId, eventType, even
 
 ;// CONCATENATED MODULE: ./src/lib/MethodTracer.ts
 //@ts-nocheck
+var MethodTracer_spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 var inspect = __webpack_require__(631);
 /** An object to be used as an ES6 Proxy handler to trace method calls and
     undefined property accesses on the target object.
  */
-/* harmony default export */ const MethodTracer = ({
-    get(target, propKey, receiver) {
-        const f = target[propKey];
+/* harmony default export */ var MethodTracer = ({
+    get: function (target, propKey, receiver) {
+        var f = target[propKey];
         if (typeof f === "undefined") {
             console.log("MethodTrace: Stubbing undefined property access for", propKey);
-            return function _noop(...args) {
-                console.log("MethodTrace Stub:", propKey, ...args.map((arg) => {
+            return function _noop() {
+                var args = [];
+                for (var _i = 0; _i < arguments.length; _i++) {
+                    args[_i] = arguments[_i];
+                }
+                console.log.apply(console, MethodTracer_spreadArray(["MethodTrace Stub:",
+                    propKey], args.map(function (arg) {
                     return inspect(arg, { depth: 1 });
-                }));
+                }), false));
             };
         }
         if (typeof f === "function") {
-            return function _traced(...args) {
-                console.log("MethodTrace:", propKey, ...args.map((arg) => {
+            return function _traced() {
+                var args = [];
+                for (var _i = 0; _i < arguments.length; _i++) {
+                    args[_i] = arguments[_i];
+                }
+                console.log.apply(console, MethodTracer_spreadArray(["MethodTrace:",
+                    propKey], args.map(function (arg) {
                     return inspect(arg, { depth: 1 });
-                }));
+                }), false));
                 return f.apply(this, args);
             };
         }
@@ -55198,7 +55347,7 @@ var Renderer_rest = (undefined && undefined.__rest) || function (s, e) {
 
 
 //TODO: This should really be types against ReactReconciler.HostConfig with the generics typed out.
-const HostConfig = {
+var HostConfig = {
     /** Time provider. */
     now: Date.now,
     /** Indicates to the reconciler that our DOM tree supports mutating operations
@@ -55211,19 +55360,28 @@ const HostConfig = {
      *  constraints, such as that raw text content must be a child of a <Text>
      *  element.
      */
-    getRootHostContext(rootContainerInstance) {
+    getRootHostContext: function (rootContainerInstance) {
         return {
             isInTextParent: false,
         };
     },
     /** Provides the context for rendering a child element.
      */
-    getChildHostContext(parentHostContext, elementType, rootContainerInstance) {
-        const isInTextParent = parentHostContext.isInTextParent || elementType === "Text";
-        return { isInTextParent };
+    getChildHostContext: function (parentHostContext, elementType, rootContainerInstance) {
+        var isInTextParent = parentHostContext.isInTextParent || elementType === "Text";
+        return { isInTextParent: isInTextParent };
     },
-    prepareForCommit: (...args) => { },
-    resetAfterCommit: (...args) => {
+    prepareForCommit: function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+    },
+    resetAfterCommit: function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
         Backend.resetAfterCommit();
     },
     /** Called to determine whether or not a new text value can be set on an
@@ -55238,28 +55396,28 @@ const HostConfig = {
      *  backend that support this kind of behavior. All text nodes must be created as
      *  RawTextViewInstances as children of a TextViewInstance.
      */
-    shouldSetTextContent(elementType, props) {
+    shouldSetTextContent: function (elementType, props) {
         return false;
     },
     /** Create a new DOM node. */
-    createInstance(elementType, props, rootContainerInstance, hostContext, internalInstanceHandle) {
+    createInstance: function (elementType, props, rootContainerInstance, hostContext, internalInstanceHandle) {
         browser_default()(!hostContext.isInTextParent, "Nesting elements inside of <Text> is currently not supported.");
         return Backend.createViewInstance(elementType, props, rootContainerInstance);
     },
     /** Create a new text node. */
-    createTextInstance(text, rootContainerInstance, hostContext, internalInstanceHandle) {
+    createTextInstance: function (text, rootContainerInstance, hostContext, internalInstanceHandle) {
         browser_default()(hostContext.isInTextParent, "Raw text strings must be rendered within a <Text> element.");
         return Backend.createTextViewInstance(text, rootContainerInstance);
     },
     /** Mount the child to its container. */
-    appendInitialChild(parentInstance, child) {
+    appendInitialChild: function (parentInstance, child) {
         parentInstance.appendChild(child);
     },
     /** For each newly constructed node, once we finish the assignment of children
      *  this method will be called to finalize the node. We take this opportunity
      *  to propagate relevant properties to the node.
      */
-    finalizeInitialChildren(instance, elementType, props, rootContainerInstance) {
+    finalizeInitialChildren: function (instance, elementType, props, rootContainerInstance) {
         Object.keys(props).forEach(function (propKey) {
             if (propKey !== "children") {
                 instance.setProperty(propKey, props[propKey]);
@@ -55270,14 +55428,14 @@ const HostConfig = {
      *  properties that need to be updated. This is more-or-less an opportunity
      *  for us to diff our props before propagating.
      */
-    prepareUpdate(domElement, elementType, oldProps, newProps, rootContainerInstance, hostContext) {
+    prepareUpdate: function (domElement, elementType, oldProps, newProps, rootContainerInstance, hostContext) {
         // The children prop will be handled separately via the tree update.
-        let { children: oldChildren } = oldProps, op = Renderer_rest(oldProps, ["children"]);
-        let { children: newChildren } = newProps, np = Renderer_rest(newProps, ["children"]);
+        var oldChildren = oldProps.children, op = Renderer_rest(oldProps, ["children"]);
+        var newChildren = newProps.children, np = Renderer_rest(newProps, ["children"]);
         // We construct a new payload of property values that are either new or
         // have changed for this element.
-        let payload = {};
-        for (let key in np) {
+        var payload = {};
+        for (var key in np) {
             if (np.hasOwnProperty(key) && np[key] !== op[key]) {
                 payload[key] = np[key];
             }
@@ -55287,7 +55445,7 @@ const HostConfig = {
     /** Following from `prepareUpdate` above, this is our opportunity to apply
      *  the update payload to a given instance.
      */
-    commitUpdate(instance, updatePayload, elementType, oldProps, newProps, internalInstanceHandle) {
+    commitUpdate: function (instance, updatePayload, elementType, oldProps, newProps, internalInstanceHandle) {
         Object.keys(updatePayload).forEach(function (propKey) {
             instance.setProperty(propKey, updatePayload[propKey]);
         });
@@ -55295,64 +55453,77 @@ const HostConfig = {
     /** Similar to the previous method, this is our opportunity to apply text
      *  updates to a given instance.
      */
-    commitTextUpdate(instance, oldText, newText) {
+    commitTextUpdate: function (instance, oldText, newText) {
         if (typeof newText === "string" && oldText !== newText) {
             instance.setTextValue(newText);
         }
     },
     /** TODO
      */
-    commitMount(instance, type, newProps, internalInstanceHandle) {
+    commitMount: function (instance, type, newProps, internalInstanceHandle) {
         // Noop
     },
     /** Append a child to a parent instance. */
-    appendChild(parentInstance, child) {
+    appendChild: function (parentInstance, child) {
         parentInstance.appendChild(child);
     },
     /** Append a child to a parent container.
      *  TODO: Not really sure how this is different from the above.
      */
-    appendChildToContainer(parentContainer, child) {
+    appendChildToContainer: function (parentContainer, child) {
         parentContainer.appendChild(child);
     },
     /** Inserts a child node into a parent's children array, just before the
      *  second given child node.
      */
-    insertBefore(parentInstance, child, beforeChild) {
-        let index = parentInstance.getChildIndex(beforeChild);
+    insertBefore: function (parentInstance, child, beforeChild) {
+        var index = parentInstance.getChildIndex(beforeChild);
         if (index < 0)
             throw new Error("Failed to find child instance for insertBefore operation.");
         parentInstance.insertChild(child, index);
     },
     /** Remove a child from a parent instance. */
-    removeChild(parentInstance, child) {
+    removeChild: function (parentInstance, child) {
         parentInstance.removeChild(child);
     },
     /** Remove a child from a parent container. */
-    removeChildFromContainer(parentContainer, child) {
+    removeChildFromContainer: function (parentContainer, child) {
         parentContainer.removeChild(child);
     },
 };
 //TODO: Applied ts-ignore here as TS complains about missing functions on HostConfig
 //@ts-ignore
-/* harmony default export */ const Renderer = (react_reconciler_default()(HostConfig));
-const TracedRenderer = react_reconciler_default()(new Proxy(HostConfig, MethodTracer));
+/* harmony default export */ var Renderer = (react_reconciler_default()(HostConfig));
+var TracedRenderer = react_reconciler_default()(new Proxy(HostConfig, MethodTracer));
 
 // EXTERNAL MODULE: ./node_modules/events/events.js
 var events = __webpack_require__(187);
 var events_default = /*#__PURE__*/__webpack_require__.n(events);
 ;// CONCATENATED MODULE: ./src/lib/EventBridge.ts
+var EventBridge_spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 
 
-const EventBridge = new (events_default()).EventEmitter();
+var EventBridge = new (events_default()).EventEmitter();
 EventBridge.setMaxListeners(30);
 // An internal hook for the native side, from which we propagate events through
 // the EventEmitter interface.
 // @ts-ignore
-NativeMethods.dispatchEvent = function dispatchEvent(eventType, ...args) {
-    EventBridge.emit(eventType, ...args);
+NativeMethods.dispatchEvent = function dispatchEvent(eventType) {
+    var args = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        args[_i - 1] = arguments[_i];
+    }
+    EventBridge.emit.apply(EventBridge, EventBridge_spreadArray([eventType], args, false));
 };
-/* harmony default export */ const lib_EventBridge = ((/* unused pure expression or super */ null && (EventBridge)));
+/* harmony default export */ var lib_EventBridge = ((/* unused pure expression or super */ null && (EventBridge)));
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(294);
@@ -55395,7 +55566,7 @@ function ScrollViewContentView(props) {
     return react.createElement("ScrollViewContentView", props, props.children);
 }
 function parseScrollbarColorProp(scrollbarColorProp) {
-    const values = scrollbarColorProp.split(" ");
+    var values = scrollbarColorProp.split(" ");
     browser_default()(values.length === 2, 'scrollbar-color should be a space separated string with two values: "{thumbColor} {trackColor}".');
     return {
         "scrollbar-thumb-color": values[0],
@@ -55405,7 +55576,7 @@ function parseScrollbarColorProp(scrollbarColorProp) {
 function parseScrollbarWidthProp(scrollBarWidthProp) {
     browser_default()(typeof scrollBarWidthProp === "string" ||
         typeof scrollBarWidthProp === "number", "scrollbar-width should be a string or a number.");
-    let props = {};
+    var props = {};
     if (typeof scrollBarWidthProp === "string") {
         switch (scrollBarWidthProp) {
             // JUCE's look and feel V2 uses 18px as default scrollbar thickness.
@@ -55428,17 +55599,17 @@ function parseScrollbarWidthProp(scrollBarWidthProp) {
     return props;
 }
 function parseOverflowProp(overflowProp, overflowXProp, overflowYProp) {
-    let props = {};
+    var props = {};
     props["overflow-x"] = overflowXProp || overflowProp;
     props["overflow-y"] = overflowYProp || overflowProp;
     return props;
 }
 //TODO: Remove any once ViewProps typed
-function ScrollView_ScrollView(props) {
-    const child = react.Children.only(props.children);
+function ScrollView(props) {
+    var child = react.Children.only(props.children);
     browser_default()(child && child["type"] === ScrollViewContentView, "ScrollView must have only one child, and that child must be a ScrollView.ContentView.");
     // Unpack non-native props
-    let { overflow, "scrollbar-color": scrollbarColor, "scrollbar-width": scrollBarWidth } = props, other = ScrollView_rest(props, ["overflow", "scrollbar-color", "scrollbar-width"]);
+    var overflow = props.overflow, scrollbarColor = props["scrollbar-color"], scrollBarWidth = props["scrollbar-width"], other = ScrollView_rest(props, ["overflow", "scrollbar-color", "scrollbar-width"]);
     if (typeof scrollbarColor !== "undefined")
         Object.assign(other, parseScrollbarColorProp(scrollbarColor));
     if (typeof scrollBarWidth !== "undefined")
@@ -55447,52 +55618,87 @@ function ScrollView_ScrollView(props) {
         Object.assign(other, parseOverflowProp(overflow, other["overflow-x"], other["overflow-y"]));
     return react.createElement("ScrollView", other, child);
 }
-ScrollView_ScrollView.ContentView = ScrollViewContentView;
+ScrollView.ContentView = ScrollViewContentView;
 
 ;// CONCATENATED MODULE: ./src/components/Canvas.ts
+var Canvas_extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
 
 // TODO: Need to explicitly bind this to members?
-class CanvasRenderingContext {
-    constructor() {
+var CanvasRenderingContext = /** @class */ (function () {
+    function CanvasRenderingContext() {
         this._drawCommands = [];
     }
-    reset() {
+    CanvasRenderingContext.prototype.reset = function () {
         this._drawCommands = [];
-    }
-    getDrawCommands() {
+    };
+    CanvasRenderingContext.prototype.getDrawCommands = function () {
         return this._drawCommands;
-    }
-    //================================================================================
-    // Properties
-    // TODO: Support fillStyle/strokeStyle pattern.
-    // TODO: Support fillStyle/strokeStyle gradient.
-    set fillStyle(value) {
-        value = Colors.colorStringToAlphaHex(value);
-        this._drawCommands.push(["setFillStyle", value]);
-    }
-    set strokeStyle(value) {
-        value = Colors.colorStringToAlphaHex(value);
-        this._drawCommands.push(["setStrokeStyle", value]);
-    }
-    set lineWidth(value) {
-        this._drawCommands.push(["setLineWidth", value]);
-    }
-    set font(value) {
-        this._drawCommands.push(["setFont", value]);
-    }
-    set textAlign(value) {
-        this._drawCommands.push(["setTextAlign", value]);
-    }
+    };
+    Object.defineProperty(CanvasRenderingContext.prototype, "fillStyle", {
+        //================================================================================
+        // Properties
+        // TODO: Support fillStyle/strokeStyle pattern.
+        // TODO: Support fillStyle/strokeStyle gradient.
+        set: function (value) {
+            value = Colors.colorStringToAlphaHex(value);
+            this._drawCommands.push(["setFillStyle", value]);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CanvasRenderingContext.prototype, "strokeStyle", {
+        set: function (value) {
+            value = Colors.colorStringToAlphaHex(value);
+            this._drawCommands.push(["setStrokeStyle", value]);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CanvasRenderingContext.prototype, "lineWidth", {
+        set: function (value) {
+            this._drawCommands.push(["setLineWidth", value]);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CanvasRenderingContext.prototype, "font", {
+        set: function (value) {
+            this._drawCommands.push(["setFont", value]);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CanvasRenderingContext.prototype, "textAlign", {
+        set: function (value) {
+            this._drawCommands.push(["setTextAlign", value]);
+        },
+        enumerable: false,
+        configurable: true
+    });
     //================================================================================
     // Rect functions
-    fillRect(x, y, width, height) {
+    CanvasRenderingContext.prototype.fillRect = function (x, y, width, height) {
         this._drawCommands.push(["fillRect", x, y, width, height]);
-    }
-    strokeRect(x, y, width, height) {
+    };
+    CanvasRenderingContext.prototype.strokeRect = function (x, y, width, height) {
         this._drawCommands.push(["strokeRect", x, y, width, height]);
-    }
-    strokeRoundedRect(x, y, width, height, cornerSize) {
+    };
+    CanvasRenderingContext.prototype.strokeRoundedRect = function (x, y, width, height, cornerSize) {
         this._drawCommands.push([
             "strokeRoundedRect",
             x,
@@ -55501,8 +55707,8 @@ class CanvasRenderingContext {
             height,
             cornerSize,
         ]);
-    }
-    fillRoundedRect(x, y, width, height, cornerSize) {
+    };
+    CanvasRenderingContext.prototype.fillRoundedRect = function (x, y, width, height, cornerSize) {
         this._drawCommands.push([
             "fillRoundedRect",
             x,
@@ -55511,10 +55717,10 @@ class CanvasRenderingContext {
             height,
             cornerSize,
         ]);
-    }
-    clearRect(x, y, width, height) {
+    };
+    CanvasRenderingContext.prototype.clearRect = function (x, y, width, height) {
         this._drawCommands.push(["clearRect", x, y, width, height]);
-    }
+    };
     //================================================================================
     // Path functions
     //
@@ -55524,81 +55730,85 @@ class CanvasRenderingContext {
     //       CanvasRenderingContext2D is composed of other objects like CanvasRenderingContextPath
     //       which contains all path methods. What is the best way to do this in JS and share
     //       a drawCommands instance?
-    beginPath() {
+    CanvasRenderingContext.prototype.beginPath = function () {
         this._drawCommands.push(["beginPath"]);
-    }
-    lineTo(x, y) {
+    };
+    CanvasRenderingContext.prototype.lineTo = function (x, y) {
         this._drawCommands.push(["lineTo", x, y]);
-    }
-    moveTo(x, y) {
+    };
+    CanvasRenderingContext.prototype.moveTo = function (x, y) {
         this._drawCommands.push(["moveTo", x, y]);
-    }
-    arc(x, y, radius, startAngle, endAngle) {
+    };
+    CanvasRenderingContext.prototype.arc = function (x, y, radius, startAngle, endAngle) {
         //TODO: Add support for optional antiClockWise?: boolean arg
         this._drawCommands.push(["arc", x, y, radius, startAngle, endAngle]);
-    }
-    quadraticCurveTo(cpx, cpy, x, y) {
+    };
+    CanvasRenderingContext.prototype.quadraticCurveTo = function (cpx, cpy, x, y) {
         this._drawCommands.push(["quadraticCurveTo", cpx, cpy, x, y]);
-    }
-    closePath() {
+    };
+    CanvasRenderingContext.prototype.closePath = function () {
         this._drawCommands.push(["close"]);
-    }
-    stroke() {
+    };
+    CanvasRenderingContext.prototype.stroke = function () {
         this._drawCommands.push(["stroke"]);
-    }
-    fill() {
+    };
+    CanvasRenderingContext.prototype.fill = function () {
         this._drawCommands.push(["fill"]);
-    }
+    };
     //================================================================================
     // Transform functions
-    rotate(angle) {
+    CanvasRenderingContext.prototype.rotate = function (angle) {
         this._drawCommands.push(["rotate", angle]);
-    }
-    translate(x, y) {
+    };
+    CanvasRenderingContext.prototype.translate = function (x, y) {
         this._drawCommands.push(["translate", x, y]);
-    }
-    setTransform(a, b, c, d, e, f) {
+    };
+    CanvasRenderingContext.prototype.setTransform = function (a, b, c, d, e, f) {
         this._drawCommands.push(["setTransform", a, b, c, d, e, f]);
-    }
-    resetTransform() {
+    };
+    CanvasRenderingContext.prototype.resetTransform = function () {
         this._drawCommands.push(["resetTransform"]);
-    }
+    };
     //================================================================================
     // Image functions
     //
     //TODO: Add support for other drawImage overloads.
     //      Currently only support SVG string. What is correct
     //      type to use here?
-    drawImage(image, dx, dy) {
+    CanvasRenderingContext.prototype.drawImage = function (image, dx, dy) {
         this._drawCommands.push(["drawImage", image, dx, dy]);
-    }
+    };
     //================================================================================
     // Text functions
-    strokeText(text, x, y, maxWidth) {
+    CanvasRenderingContext.prototype.strokeText = function (text, x, y, maxWidth) {
         if (maxWidth === undefined)
             this._drawCommands.push(["strokeText", text, x, y]);
         else
             this._drawCommands.push(["strokeText", text, x, y, maxWidth]);
-    }
-    fillText(text, x, y, maxWidth) {
+    };
+    CanvasRenderingContext.prototype.fillText = function (text, x, y, maxWidth) {
         if (maxWidth === undefined)
             this._drawCommands.push(["fillText", text, x, y]);
         else
             this._drawCommands.push(["fillText", text, x, y, maxWidth]);
-    }
-}
-class Canvas extends react.Component {
-    constructor(props) {
-        super(props);
-        this._ctx = new CanvasRenderingContext();
-        this._onMeasure = this._onMeasure.bind(this);
-        this._onDraw = this._onDraw.bind(this);
-        this.state = {
+    };
+    return CanvasRenderingContext;
+}());
+
+var Canvas = /** @class */ (function (_super) {
+    Canvas_extends(Canvas, _super);
+    function Canvas(props) {
+        var _this = _super.call(this, props) || this;
+        _this._ctx = new CanvasRenderingContext();
+        _this._onMeasure = _this._onMeasure.bind(_this);
+        _this._onDraw = _this._onDraw.bind(_this);
+        _this.state = {
             width: 0,
             height: 0,
         };
+        return _this;
     }
-    _onMeasure(e) {
+    Canvas.prototype._onMeasure = function (e) {
         this.setState({
             width: e.width,
             height: e.height,
@@ -55606,26 +55816,29 @@ class Canvas extends react.Component {
         if (typeof this.props.onMeasure === "function") {
             this.props.onMeasure(e);
         }
-    }
-    _onDraw() {
+    };
+    Canvas.prototype._onDraw = function () {
         if (typeof this.props.onDraw === "function") {
             this._ctx.reset();
             this.props.onDraw(this._ctx);
             return this._ctx.getDrawCommands();
         }
         return [];
-    }
-    render() {
+    };
+    Canvas.prototype.render = function () {
+        var _this = this;
         return react.createElement("CanvasView", Object.assign({}, this.props, {
-            onDraw: () => {
-                return this._onDraw();
+            onDraw: function () {
+                return _this._onDraw();
             },
-            onMeasure: (e) => {
-                this._onMeasure(e);
+            onMeasure: function (e) {
+                _this._onMeasure(e);
             },
         }), this.props.children);
-    }
-}
+    };
+    return Canvas;
+}(react.Component));
+
 
 ;// CONCATENATED MODULE: ./src/components/Text.ts
 
@@ -55691,6 +55904,17 @@ Image.PlacementFlags = {
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(893);
 ;// CONCATENATED MODULE: ./src/components/Button.tsx
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var Button_rest = (undefined && undefined.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -55735,56 +55959,82 @@ var Button_rest = (undefined && undefined.__rest) || function (s, e) {
  * };
  *
  */
-const Button = (_a) => {
-    var { onMouseDown, onMouseUp, onClick, children } = _a, other = Button_rest(_a, ["onMouseDown", "onMouseUp", "onClick", "children"]);
-    const _ref = useRef();
-    const [down, setDown] = useState(false);
-    const opacity = useMemo(() => (down ? 0.8 : 1.0), [down]);
-    const handleDown = useCallback((e) => {
+var Button = function (_a) {
+    var onMouseDown = _a.onMouseDown, onMouseUp = _a.onMouseUp, onClick = _a.onClick, children = _a.children, other = Button_rest(_a, ["onMouseDown", "onMouseUp", "onClick", "children"]);
+    var _ref = useRef();
+    var _b = useState(false), down = _b[0], setDown = _b[1];
+    var opacity = useMemo(function () { return (down ? 0.8 : 1.0); }, [down]);
+    var handleDown = useCallback(function (e) {
         onMouseDown === null || onMouseDown === void 0 ? void 0 : onMouseDown(e);
         setDown(true);
     }, []);
-    const handleUp = useCallback((e) => {
+    var handleUp = useCallback(function (e) {
         onMouseUp === null || onMouseUp === void 0 ? void 0 : onMouseUp(e);
         setDown(false);
         if (typeof onClick === "function") {
-            const instance = _ref ? _ref.current : null;
+            var instance = _ref ? _ref.current : null;
             if (instance && instance.contains(e.relatedTarget)) {
                 onClick(e);
             }
         }
     }, []);
-    return (_jsx(View, Object.assign({ onMouseDown: handleDown, onMouseUp: handleUp, opacity: opacity, viewRef: _ref }, other, { children: children })));
+    return (_jsx(View, __assign({ onMouseDown: handleDown, onMouseUp: handleUp, opacity: opacity, viewRef: _ref }, other, { children: children })));
 };
 
 ;// CONCATENATED MODULE: ./src/components/Slider.tsx
+var Slider_extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var Slider_assign = (undefined && undefined.__assign) || function () {
+    Slider_assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return Slider_assign.apply(this, arguments);
+};
 
 
 
 
 
 // Some simple helpers for slider drag gesture -> value mapping
-const _linearHorizontalGestureMap = (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) => {
-    const dx = dragEvent.x - mouseDownX;
+var _linearHorizontalGestureMap = function (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) {
+    var dx = dragEvent.x - mouseDownX;
     return Math.max(0.0, Math.min(1.0, valueAtDragStart + dx * sensitivity));
 };
-const _linearVerticalGestureMap = (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) => {
-    const dy = dragEvent.y - mouseDownY;
+var _linearVerticalGestureMap = function (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) {
+    var dy = dragEvent.y - mouseDownY;
     return Math.max(0.0, Math.min(1.0, valueAtDragStart - dy * sensitivity));
 };
-const _rotaryGestureMap = (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) => {
-    const dx = dragEvent.x - mouseDownX;
-    const dy = mouseDownY - dragEvent.y;
+var _rotaryGestureMap = function (mouseDownX, mouseDownY, sensitivity, valueAtDragStart, dragEvent) {
+    var dx = dragEvent.x - mouseDownX;
+    var dy = mouseDownY - dragEvent.y;
     return Math.max(0.0, Math.min(1.0, valueAtDragStart + (dx + dy) * sensitivity));
 };
-const _drawLinearHorizontalSlider = (trackColor, fillColor) => {
-    return (ctx, width, height, value) => {
-        const lineWidth = 2.0;
-        const x = 0 + lineWidth / 2;
-        const y = 0 + lineWidth / 2;
+var _drawLinearHorizontalSlider = function (trackColor, fillColor) {
+    return function (ctx, width, height, value) {
+        var lineWidth = 2.0;
+        var x = 0 + lineWidth / 2;
+        var y = 0 + lineWidth / 2;
         width = width - lineWidth;
         height = height - lineWidth;
-        const fillWidth = value * width;
+        var fillWidth = value * width;
         ctx.lineWidth = lineWidth;
         ctx.strokeStyle = trackColor;
         ctx.fillStyle = fillColor;
@@ -55792,15 +56042,15 @@ const _drawLinearHorizontalSlider = (trackColor, fillColor) => {
         ctx.strokeRect(x, y, width, height);
     };
 };
-const _drawLinearVerticalSlider = (trackColor, fillColor) => {
-    return (ctx, width, height, value) => {
-        const lineWidth = 2.0;
-        const x = 0 + lineWidth / 2;
-        const y = 0 + lineWidth / 2;
+var _drawLinearVerticalSlider = function (trackColor, fillColor) {
+    return function (ctx, width, height, value) {
+        var lineWidth = 2.0;
+        var x = 0 + lineWidth / 2;
+        var y = 0 + lineWidth / 2;
         width = width - lineWidth;
         height = height - lineWidth;
-        const fillHeight = value * height;
-        const fillY = y + (height - fillHeight);
+        var fillHeight = value * height;
+        var fillY = y + (height - fillHeight);
         ctx.lineWidth = lineWidth;
         ctx.strokeStyle = trackColor;
         ctx.fillStyle = fillColor;
@@ -55809,9 +56059,9 @@ const _drawLinearVerticalSlider = (trackColor, fillColor) => {
     };
 };
 function _drawArc(ctx, centerX, centerY, radius, arcSize, startAngle, endAngle, lineWidth) {
-    const deltaX = centerX;
-    const deltaY = centerY;
-    const rotateAngle = ((180 + 180 * (1 - arcSize)) * Math.PI) / 180;
+    var deltaX = centerX;
+    var deltaY = centerY;
+    var rotateAngle = ((180 + 180 * (1 - arcSize)) * Math.PI) / 180;
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
     ctx.moveTo(centerX - lineWidth / 2, 0);
@@ -55822,17 +56072,17 @@ function _drawArc(ctx, centerX, centerY, radius, arcSize, startAngle, endAngle, 
     ctx.stroke();
     ctx.resetTransform();
 }
-const _drawRotarySlider = (trackColor, fillColor) => {
-    return (ctx, width, height, value) => {
-        const lineWidth = 3;
-        const arcSize = 0.8;
-        const radius = Math.min(width, height) * 0.5 - lineWidth / 2;
-        const centerX = width / 2;
-        const centerY = height / 2;
-        const strokeStart = 0;
-        const strokeEnd = 2 * Math.PI * arcSize;
-        const fillStart = -(2.5 * Math.PI * arcSize);
-        const fillEnd = fillStart + value * (2 * Math.PI * arcSize);
+var _drawRotarySlider = function (trackColor, fillColor) {
+    return function (ctx, width, height, value) {
+        var lineWidth = 3;
+        var arcSize = 0.8;
+        var radius = Math.min(width, height) * 0.5 - lineWidth / 2;
+        var centerX = width / 2;
+        var centerY = height / 2;
+        var strokeStart = 0;
+        var strokeEnd = 2 * Math.PI * arcSize;
+        var fillStart = -(2.5 * Math.PI * arcSize);
+        var fillEnd = fillStart + value * (2 * Math.PI * arcSize);
         ctx.strokeStyle = trackColor;
         _drawArc(ctx, centerX, centerY, radius, arcSize, strokeStart, strokeEnd, lineWidth);
         ctx.strokeStyle = fillColor;
@@ -55865,29 +56115,31 @@ const _drawRotarySlider = (trackColor, fillColor) => {
  * />
  *
  */
-class Slider extends react.Component {
-    constructor(props) {
-        super(props);
-        this._valueAtDragStart = 0.0;
-        this._mouseDownX = 0;
-        this._mouseDownY = 0;
-        this._onMeasure = this._onMeasure.bind(this);
-        this._onMouseDown = this._onMouseDown.bind(this);
-        this._onMouseDrag = this._onMouseDrag.bind(this);
-        this._onDraw = this._onDraw.bind(this);
-        this.state = {
+var Slider = /** @class */ (function (_super) {
+    Slider_extends(Slider, _super);
+    function Slider(props) {
+        var _this = _super.call(this, props) || this;
+        _this._valueAtDragStart = 0.0;
+        _this._mouseDownX = 0;
+        _this._mouseDownY = 0;
+        _this._onMeasure = _this._onMeasure.bind(_this);
+        _this._onMouseDown = _this._onMouseDown.bind(_this);
+        _this._onMouseDrag = _this._onMouseDrag.bind(_this);
+        _this._onDraw = _this._onDraw.bind(_this);
+        _this.state = {
             width: 0,
             height: 0,
             value: 0.0,
         };
+        return _this;
     }
-    _onMeasure(e) {
+    Slider.prototype._onMeasure = function (e) {
         this.setState({
             width: e.width,
             height: e.height,
         });
-    }
-    _onMouseDown(e) {
+    };
+    Slider.prototype._onMouseDown = function (e) {
         this._valueAtDragStart = this.props.hasOwnProperty("value")
             ? this.props.value
             : this.state.value;
@@ -55896,9 +56148,9 @@ class Slider extends react.Component {
         if (typeof this.props.onMouseDown === "function") {
             this.props.onMouseDown(e);
         }
-    }
-    _onMouseDrag(e) {
-        let value = 0.0;
+    };
+    Slider.prototype._onMouseDrag = function (e) {
+        var value = 0.0;
         if (typeof this.props.mapDragGestureToValue !== "function") {
             browser_default()(false, "Invalid gesture mapping function supplied.");
             return;
@@ -55915,31 +56167,33 @@ class Slider extends react.Component {
         if (typeof this.props.onMouseDrag === "function") {
             this.props.onMouseDrag(e);
         }
-    }
-    _onDraw(ctx) {
-        const value = this.props.hasOwnProperty("value")
+    };
+    Slider.prototype._onDraw = function (ctx) {
+        var value = this.props.hasOwnProperty("value")
             ? this.props.value
             : this.state.value;
         if (typeof this.props.onDraw === "function") {
             return this.props.onDraw(ctx, this.state.width, this.state.height, value);
         }
-    }
-    render() {
-        return ((0,jsx_runtime.jsxs)(View_View, Object.assign({}, this.props, { onMeasure: this._onMeasure, onMouseDown: this._onMouseDown, onMouseDrag: this._onMouseDrag }, { children: [(0,jsx_runtime.jsx)(Canvas, Object.assign({ onDraw: this._onDraw }, styles.canvas)), this.props.children] })));
-    }
-}
-Slider.linearHorizontalGestureMap = _linearHorizontalGestureMap;
-Slider.linearVerticalGestureMap = _linearVerticalGestureMap;
-Slider.rotaryGestureMap = _rotaryGestureMap;
-Slider.drawLinearHorizontal = _drawLinearHorizontalSlider;
-Slider.drawLinearVertical = _drawLinearVerticalSlider;
-Slider.drawRotary = _drawRotarySlider;
-Slider.defaultProps = {
-    sensitivity: 1 / 200,
-    onDraw: _drawRotarySlider("ff626262", "ff66FDCF"),
-    mapDragGestureToValue: _rotaryGestureMap,
-};
-const styles = {
+    };
+    Slider.prototype.render = function () {
+        return ((0,jsx_runtime.jsxs)(View_View, Slider_assign({}, this.props, { onMeasure: this._onMeasure, onMouseDown: this._onMouseDown, onMouseDrag: this._onMouseDrag }, { children: [(0,jsx_runtime.jsx)(Canvas, Slider_assign({ onDraw: this._onDraw }, styles.canvas)), this.props.children] })));
+    };
+    Slider.linearHorizontalGestureMap = _linearHorizontalGestureMap;
+    Slider.linearVerticalGestureMap = _linearVerticalGestureMap;
+    Slider.rotaryGestureMap = _rotaryGestureMap;
+    Slider.drawLinearHorizontal = _drawLinearHorizontalSlider;
+    Slider.drawLinearVertical = _drawLinearVerticalSlider;
+    Slider.drawRotary = _drawRotarySlider;
+    Slider.defaultProps = {
+        sensitivity: 1 / 200,
+        onDraw: _drawRotarySlider("ff626262", "ff66FDCF"),
+        mapDragGestureToValue: _rotaryGestureMap,
+    };
+    return Slider;
+}(react.Component));
+
+var styles = {
     canvas: {
         width: "100%",
         height: "100%",
@@ -55949,6 +56203,32 @@ const styles = {
 };
 
 ;// CONCATENATED MODULE: ./src/components/ListView.tsx
+var ListView_extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var ListView_assign = (undefined && undefined.__assign) || function () {
+    ListView_assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return ListView_assign.apply(this, arguments);
+};
 
 
 
@@ -55990,72 +56270,74 @@ const styles = {
  * />
  *
  */
-class ListView extends (/* unused pure expression or super */ null && (Component)) {
-    constructor(props) {
-        super(props);
-        this._ref = React.createRef();
-        this._onMeasure = this._onMeasure.bind(this);
-        this._calculateVirtualPositions =
-            this._calculateVirtualPositions.bind(this);
-        this._setScrollTopPosition = this._setScrollTopPosition.bind(this);
-        this.scrollToIndex = this.scrollToIndex.bind(this);
-        this.state = {
+var ListView = /** @class */ (function (_super) {
+    ListView_extends(ListView, _super);
+    function ListView(props) {
+        var _this = _super.call(this, props) || this;
+        _this._ref = react.createRef();
+        _this._onMeasure = _this._onMeasure.bind(_this);
+        _this._calculateVirtualPositions =
+            _this._calculateVirtualPositions.bind(_this);
+        _this._setScrollTopPosition = _this._setScrollTopPosition.bind(_this);
+        _this.scrollToIndex = _this.scrollToIndex.bind(_this);
+        _this.state = {
             scrollTopPosition: 0,
             width: 0,
             height: 0,
         };
+        return _this;
     }
-    _onMeasure(e) {
+    ListView.prototype._onMeasure = function (e) {
         this.setState({
             width: e.width,
             height: e.height,
         });
-    }
-    _calculateVirtualPositions() {
-        const totalItems = this.props.data.length;
-        const innerHeight = this.props.itemHeight * totalItems;
-        invariant(this.props.itemHeight > 0, "Zero or negative itemHeight passed to ListView");
+    };
+    ListView.prototype._calculateVirtualPositions = function () {
+        var totalItems = this.props.data.length;
+        var innerHeight = this.props.itemHeight * totalItems;
+        browser_default()(this.props.itemHeight > 0, "Zero or negative itemHeight passed to ListView");
         // Pad num rendered items by 1 so we always render the same number of items
         // which allows us to use a fixed key value on each item in the list.
-        const numItems = Math.floor(this.state.height / this.props.itemHeight) + 1;
-        const startIndex = Math.floor(this.state.scrollTopPosition / this.props.itemHeight);
-        const endIndex = Math.min(totalItems - 1, startIndex + numItems);
+        var numItems = Math.floor(this.state.height / this.props.itemHeight) + 1;
+        var startIndex = Math.floor(this.state.scrollTopPosition / this.props.itemHeight);
+        var endIndex = Math.min(totalItems - 1, startIndex + numItems);
         return {
             innerHeight: innerHeight,
             startIndex: startIndex,
             endIndex: endIndex,
         };
-    }
-    _setScrollTopPosition(e) {
+    };
+    ListView.prototype._setScrollTopPosition = function (e) {
         this.setState({
             scrollTopPosition: e.scrollTop,
         });
         if (typeof this.props.onScroll === "function") {
             this.props.onScroll(e);
         }
-    }
-    scrollToIndex(scrollParams) {
-        invariant(scrollParams.index >= 0 && scrollParams.index <= this.props.data.length, "scrollParams.index must be between 0 and props.data.length");
-        invariant(scrollParams.offset >= 0.0 && scrollParams.offset <= 1.0, "scrollParams.offset must be normalised between 0.0 and 1.0");
-        const numItems = Math.floor(this.state.height / this.props.itemHeight);
-        const xPos = 0;
-        let yPos = this.props.itemHeight * scrollParams.index -
+    };
+    ListView.prototype.scrollToIndex = function (scrollParams) {
+        browser_default()(scrollParams.index >= 0 && scrollParams.index <= this.props.data.length, "scrollParams.index must be between 0 and props.data.length");
+        browser_default()(scrollParams.offset >= 0.0 && scrollParams.offset <= 1.0, "scrollParams.offset must be normalised between 0.0 and 1.0");
+        var numItems = Math.floor(this.state.height / this.props.itemHeight);
+        var xPos = 0;
+        var yPos = this.props.itemHeight * scrollParams.index -
             this.props.itemHeight * numItems * scrollParams.offset;
-        const scrollViewInstance = this._ref ? this._ref.current : null;
+        var scrollViewInstance = this._ref ? this._ref.current : null;
         if (scrollViewInstance) {
             //@ts-ignore
             scrollViewInstance.scrollToPosition(xPos, yPos);
         }
-    }
-    render() {
-        const positions = this._calculateVirtualPositions();
-        const items = [];
+    };
+    ListView.prototype.render = function () {
+        var positions = this._calculateVirtualPositions();
+        var items = [];
         // List items must have a key but we ensure the key remains fixed here
         // so that we simply re-render the existing views/components rather than
         // replacing them. This stops issues occuring when dynamically adding and removing
         // components inside a juce::Viewport.
         if (this.state.height > 0) {
-            for (let i = positions.startIndex; i <= positions.endIndex; ++i) {
+            for (var i = positions.startIndex; i <= positions.endIndex; ++i) {
                 items.push(this.props.renderItem(this.props.data[i], i, {
                     position: "absolute",
                     top: this.props.itemHeight * i,
@@ -56063,10 +56345,12 @@ class ListView extends (/* unused pure expression or super */ null && (Component
                 }));
             }
         }
-        return (_jsx(ScrollView, Object.assign({}, this.props, { onMeasure: this._onMeasure, onScroll: this._setScrollTopPosition, viewRef: this._ref }, { children: _jsx(ScrollView.ContentView, Object.assign({}, ListView_styles.scrollViewContent, { height: positions.innerHeight }, { children: items })) })));
-    }
-}
-const ListView_styles = {
+        return ((0,jsx_runtime.jsx)(ScrollView, ListView_assign({}, this.props, { onMeasure: this._onMeasure, onScroll: this._setScrollTopPosition, viewRef: this._ref }, { children: (0,jsx_runtime.jsx)(ScrollView.ContentView, ListView_assign({}, ListView_styles.scrollViewContent, { height: positions.innerHeight }, { children: items })) })));
+    };
+    return ListView;
+}(react.Component));
+
+var ListView_styles = {
     scrollViewContent: {
         flexDirection: "column",
         flex: 1.0,
@@ -56088,13 +56372,13 @@ const ListView_styles = {
 
 
 
-let __renderStarted = false;
-let __preferredRenderer = Renderer;
-/* harmony default export */ const src = ({
-    getRootContainer() {
+var __renderStarted = false;
+var __preferredRenderer = Renderer;
+/* harmony default export */ var src = ({
+    getRootContainer: function () {
         return Backend.getRootContainer();
     },
-    render(element, container, callback) {
+    render: function (element, container, callback) {
         console.log("Render started...");
         // Create a root Container if it doesnt exist
         if (!container._rootContainer) {
@@ -56107,7 +56391,7 @@ let __preferredRenderer = Renderer;
             // identifierPrefix: string,
             // onRecoverableError: (error: Error) => void,
             // transitionCallbacks: null | TransitionTracingCallbacks,
-            container._rootContainer = __preferredRenderer.createContainer(container, element, null, false, false, "app", (e) => console.log("error", e), null);
+            container._rootContainer = __preferredRenderer.createContainer(container, element, null, false, false, "app", function (e) { return console.log("error", e); }, null);
         }
         // Update the root Container
         return __preferredRenderer.updateContainer(element, container._rootContainer, null, 
@@ -56115,7 +56399,7 @@ let __preferredRenderer = Renderer;
         // @ts-ignore
         callback);
     },
-    enableMethodTrace() {
+    enableMethodTrace: function () {
         if (__renderStarted) {
             throw new Error("Cannot enable method trace after initial render.");
         }
@@ -56123,8 +56407,7 @@ let __preferredRenderer = Renderer;
     },
 });
 
-})();
-
+}();
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

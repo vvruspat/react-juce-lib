@@ -9,6 +9,7 @@ module.exports = (_env) => {
       sourceMapFilename: "[file].map",
       devtoolModuleFilenameTemplate: "webpack:///[absolute-resource-path]",
     },
+    target: ["es5", "web"],
     devtool: "source-map",
     resolve: {
       extensions: [".tsx", ".ts", ".jsx", ".js"],
@@ -36,7 +37,6 @@ module.exports = (_env) => {
         },
       ],
     },
-    target: ["web", "es6"],
     optimization: {
       minimize: false,
     },
