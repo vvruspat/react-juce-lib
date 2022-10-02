@@ -36,6 +36,7 @@ module.exports = (_env) => {
         },
       ],
     },
+    target: ["web", "es6"],
     optimization: {
       minimize: false,
     },
