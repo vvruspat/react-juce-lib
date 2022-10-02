@@ -97,14 +97,14 @@ const _drawLinearVerticalSlider = (trackColor: string, fillColor: string) => {
 };
 
 function _drawArc(
-  ctx,
-  centerX,
-  centerY,
-  radius,
-  arcSize,
-  startAngle,
-  endAngle,
-  lineWidth
+  ctx: CanvasRenderingContext,
+  centerX: number,
+  centerY: number,
+  radius: number,
+  arcSize: number,
+  startAngle: number,
+  endAngle: number,
+  lineWidth: number
 ) {
   const deltaX = centerX;
   const deltaY = centerY;
@@ -131,8 +131,13 @@ function _drawArc(
   ctx.resetTransform();
 }
 
-const _drawRotarySlider = (trackColor, fillColor) => {
-  return (ctx, width, height, value) => {
+const _drawRotarySlider = (trackColor: string, fillColor: string) => {
+  return (
+    ctx: CanvasRenderingContext,
+    width: number,
+    height: number,
+    value: number
+  ) => {
     const lineWidth = 3;
     const arcSize = 0.8;
 

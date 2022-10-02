@@ -18,7 +18,7 @@ let __lastMouseDownViewId: string | null = null;
 // get any css properties not beginning with a "-",
 // and build a map from any camelCase versions to
 // the hyphenated version
-const cssPropsMap = allCssProps
+const cssPropsMap: Record<string, string> = allCssProps
   .filter((s) => !s.startsWith("-") && s.includes("-"))
   .reduce((acc, v) => Object.assign(acc, { [camelCase(v)]: v }), {});
 
@@ -123,12 +123,12 @@ export class ViewInstance {
     // native View method.
     if (propKey === "viewRef") {
       value.current = new Proxy(this, {
-        get: function (target, prop, receiver) {
+        get: function (target: any, prop: string | symbol, _receiver: any) {
           if (prop in target) {
             return target[prop];
           }
 
-          return function (...args) {
+          return function (...args: any) {
             //@ts-ignore
             return NativeMethods.invokeViewMethod(target._id, prop, ...args);
           };
@@ -238,18 +238,18 @@ NativeMethods.dispatchViewEvent = function dispatchEvent(
   event: any
 ) {
   if (__viewRegistry.hasOwnProperty(viewId)) {
-    const instance = __viewRegistry[viewId];
+    const instance: any = __viewRegistry.get(viewId);
 
     // Convert target/relatedTarget to concrete ViewInstance refs
     if (event.target && __viewRegistry.hasOwnProperty(event.target)) {
-      event.target = __viewRegistry[event.target];
+      event.target = __viewRegistry.get(event.target);
     }
 
     if (
       event.relatedTarget &&
       __viewRegistry.hasOwnProperty(event.relatedTarget)
     ) {
-      event.relatedTarget = __viewRegistry[event.relatedTarget];
+      event.relatedTarget = __viewRegistry.get(event.relatedTarget);
     }
 
     // Convert native event object into it's SyntheticEvent equivalent if required.
@@ -293,7 +293,7 @@ export default {
     const id = NativeMethods.createViewInstance(viewType);
     const instance = new ViewInstance(id, viewType, props, parentInstance);
 
-    __viewRegistry[id] = instance;
+    __viewRegistry.set(id, instance);
     return instance;
   },
   createTextViewInstance(text: string, parentInstance: ViewInstance) {
@@ -301,7 +301,7 @@ export default {
     const id = NativeMethods.createTextViewInstance(text);
     const instance = new RawTextViewInstance(id, text, parentInstance);
 
-    __viewRegistry[id] = instance;
+    __viewRegistry.set(id, instance);
     return instance;
   },
   resetAfterCommit() {

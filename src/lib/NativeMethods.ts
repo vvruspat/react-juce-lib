@@ -1,4 +1,4 @@
-let Native = global["__NativeBindings__"] || {};
+let Native = (global as any)["__NativeBindings__"] || {};
 let DefaultExport = Native;
 
 declare var process: {

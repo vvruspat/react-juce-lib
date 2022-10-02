@@ -115,7 +115,7 @@ const colorStringToAlphaHex = (colorString: string): string => {
 const convertLinearGradientStringToNativeObject = (
   lgColorStringHex: string
 ): object => {
-  const linearGradientNativeObject = {};
+  const linearGradientNativeObject: Record<string, any> = {};
   const lgValues = lgColorStringHex
     .split(/\((.+)/)[1]
     .split(/\)$/)[0]
@@ -152,7 +152,7 @@ const convertLinearGradientStringToNativeObject = (
   const colorPositions: Array<String> = lgValues.slice(1);
 
   colorPositions.forEach((colorPos, idx) => {
-    const hexPosObj = { id: idx };
+    const hexPosObj: Record<string, number | string | undefined> = { id: idx };
     const hex = colorPos.slice(0, 8);
     //check string is an alpha hex
     const isValidAlphaHex =
@@ -188,43 +188,52 @@ const convertLinearGradientStringToNativeObject = (
     linearGradientNativeObject["colours"].push(hexPosObj);
   });
   //Find half way between previous and next given percent if no percentage assigned
-  linearGradientNativeObject["colours"].forEach((colorPos, idx) => {
-    if (colorPos["position"] === undefined) {
-      //find next color with percentage
-      const colorsClone = JSON.parse(
-        JSON.stringify(linearGradientNativeObject["colours"])
-      );
-      let currentArrayChunk = colorsClone.splice(idx);
-      const nextColorPercent = currentArrayChunk.find(
-        (colorPos) => colorPos["position"] != undefined && colorPos["id"] !== 0
-      );
-      const nextColorPercentIdx = currentArrayChunk.findIndex(
-        (colorPos) => colorPos["position"] != undefined && colorPos["id"] !== 0
-      );
-      currentArrayChunk = currentArrayChunk.splice(0, nextColorPercentIdx + 1);
-      const previousColorPercent = colorsClone[idx - 1];
-      const y = nextColorPercent["position"];
-      const x = previousColorPercent["position"];
-      const n = currentArrayChunk.length + 1;
-      //assign evenly distributed values to each undefined color in current array chunk
-      currentArrayChunk.forEach((colorPosChunk, idx) => {
-        idx += 1;
-        if (colorPosChunk["position"] === undefined) {
-          const colorPosition = x + ((y - x) / (n - 1)) * idx;
-          const colorPosObj =
-            linearGradientNativeObject["colours"][colorPosChunk["id"]];
-          colorPosObj["position"] = colorPosition;
-        }
-      });
+  linearGradientNativeObject["colours"].forEach(
+    (colorPos: Record<string, any>, idx: number) => {
+      if (colorPos["position"] === undefined) {
+        //find next color with percentage
+        const colorsClone = JSON.parse(
+          JSON.stringify(linearGradientNativeObject["colours"])
+        );
+        let currentArrayChunk = colorsClone.splice(idx);
+        const nextColorPercent = currentArrayChunk.find(
+          (colorPos: Record<string, any>) =>
+            colorPos["position"] != undefined && colorPos["id"] !== 0
+        );
+        const nextColorPercentIdx = currentArrayChunk.findIndex(
+          (colorPos: Record<string, any>) =>
+            colorPos["position"] != undefined && colorPos["id"] !== 0
+        );
+        currentArrayChunk = currentArrayChunk.splice(
+          0,
+          nextColorPercentIdx + 1
+        );
+        const previousColorPercent = colorsClone[idx - 1];
+        const y = nextColorPercent["position"];
+        const x = previousColorPercent["position"];
+        const n = currentArrayChunk.length + 1;
+        //assign evenly distributed values to each undefined color in current array chunk
+        currentArrayChunk.forEach(
+          (colorPosChunk: Record<string, any>, idx: number) => {
+            idx += 1;
+            if (colorPosChunk["position"] === undefined) {
+              const colorPosition = x + ((y - x) / (n - 1)) * idx;
+              const colorPosObj =
+                linearGradientNativeObject["colours"][colorPosChunk["id"]];
+              colorPosObj["position"] = colorPosition;
+            }
+          }
+        );
+      }
     }
-  });
+  );
   return linearGradientNativeObject;
 };
 
 const hslToHex = (h: number, s: number, l: number): string => {
   l /= 100;
   const a = (s * Math.min(l, 1 - l)) / 100;
-  const f = (n) => {
+  const f = (n: number) => {
     const k = (n + h / 30) % 12;
     const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
     return Math.round(255 * color)

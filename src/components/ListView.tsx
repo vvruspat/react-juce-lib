@@ -49,7 +49,7 @@ export interface ScrollParams {
  */
 export interface ListViewProps {
   data: any[];
-  renderItem: (any) => ReactElement;
+  renderItem: (data: any) => ReactElement;
   itemHeight: number;
 }
 
@@ -101,9 +101,8 @@ export class ListView extends Component<
     this._ref = React.createRef();
 
     this._onMeasure = this._onMeasure.bind(this);
-    this._calculateVirtualPositions = this._calculateVirtualPositions.bind(
-      this
-    );
+    this._calculateVirtualPositions =
+      this._calculateVirtualPositions.bind(this);
     this._setScrollTopPosition = this._setScrollTopPosition.bind(this);
     this.scrollToIndex = this.scrollToIndex.bind(this);
 

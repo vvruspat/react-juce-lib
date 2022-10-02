@@ -1,6 +1,6 @@
 import { TPropertyAssignment } from "./types";
 import { getMacroCalls } from "./util";
-import matrix from "matrix-js";
+import { matrix } from "mathjs";
 
 const rotateMultipliers = {
   deg: Math.PI / 180.0,
@@ -19,7 +19,7 @@ const toRadians = (arg: string) => {
   let angleFloat = parseFloat(angle);
   if (angleFloat === NaN) return NaN;
   if (unit === "" && angleFloat !== 0) return NaN;
-  angleFloat *= rotateMultipliers[unit] || 1;
+  angleFloat *= rotateMultipliers[unit as keyof typeof rotateMultipliers] || 1;
   return angleFloat;
 };
 
@@ -113,7 +113,10 @@ const argsTransformMap = {
   matrix: stringArgsToFloat,
   matrix3d: stringArgsToFloat,
   rotate: stringArgsToRadians,
-  rotate3d: (x, y, z, t) => [...stringArgsToFloat(x, y, z), toRadians(t)],
+  rotate3d: (x: string, y: string, z: string, t: string) => [
+    ...stringArgsToFloat(x, y, z),
+    toRadians(t),
+  ],
   rotateX: stringArgsToRadians,
   rotateY: stringArgsToRadians,
   rotateZ: stringArgsToRadians,
@@ -134,7 +137,14 @@ const argsTransformMap = {
 
 const transformMatrixMap = {
   none: identity,
-  matrix: (l11, l12, dx, l21, l22, dy) =>
+  matrix: (
+    l11: number,
+    l12: number,
+    dx: number,
+    l21: number,
+    l22: number,
+    dy: number
+  ) =>
     matrix([
       [l11, l12, 0, dx],
       [l21, l22, 0, dy],
@@ -142,22 +152,22 @@ const transformMatrixMap = {
       [0, 0, 0, 1],
     ]),
   matrix3d: (
-    m11,
-    m12,
-    m13,
-    m14,
-    m21,
-    m22,
-    m23,
-    m24,
-    m31,
-    m32,
-    m33,
-    m34,
-    m41,
-    m42,
-    m43,
-    m44
+    m11: number,
+    m12: number,
+    m13: number,
+    m14: number,
+    m21: number,
+    m22: number,
+    m23: number,
+    m24: number,
+    m31: number,
+    m32: number,
+    m33: number,
+    m34: number,
+    m41: number,
+    m42: number,
+    m43: number,
+    m44: number
   ) =>
     matrix([
       [m11, m12, m13, m14],
@@ -185,7 +195,11 @@ const transformMatrixMap = {
   translateZ,
 };
 
-const matrixToArray = (m) => m().reduce((acc, v) => [...acc, ...v]);
+const matrixToArray = (m: any) =>
+  m().reduce((acc: (number | string)[], v: (number | string)[]) => [
+    ...acc,
+    ...v,
+  ]);
 
 export default function (value: string): TPropertyAssignment[] {
   const calls = getMacroCalls(value);
@@ -200,8 +214,9 @@ export default function (value: string): TPropertyAssignment[] {
     if (!transformMatrixMap.hasOwnProperty(f)) {
       return acc;
     }
-    const argsTransform = argsTransformMap[f] || (() => args);
-    const transform = transformMatrixMap[f](...argsTransform(...args));
+    const argsTransform = (argsTransformMap as any)[f] || (() => args);
+    const transform = (transformMatrixMap as any)[f](...argsTransform(...args));
+
     return matrix(transform.prod(acc));
   }, identity);
   return [["transform-matrix", matrixToArray(transformMatrix)]];

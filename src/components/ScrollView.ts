@@ -27,7 +27,7 @@ function parseScrollbarWidthProp(scrollBarWidthProp: string | number) {
     "scrollbar-width should be a string or a number."
   );
 
-  let props = {};
+  let props: any = {};
 
   if (typeof scrollBarWidthProp === "string") {
     switch (scrollBarWidthProp) {
@@ -61,7 +61,7 @@ function parseOverflowProp(
   overflowXProp: string | undefined,
   overflowYProp: string | undefined
 ) {
-  let props = {};
+  let props: any = {};
 
   props["overflow-x"] = overflowXProp || overflowProp;
   props["overflow-y"] = overflowYProp || overflowProp;
