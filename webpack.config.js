@@ -11,6 +11,14 @@ module.exports = (_env) => {
       sourceMapFilename: "[file].map",
       devtoolModuleFilenameTemplate: "webpack:///[absolute-resource-path]",
     },
+    externals: {
+      react: {
+        root: "React",
+        commonjs2: "react",
+        commonjs: "react",
+        amd: "react",
+      },
+    },
     target: ["web", "es5"],
     devtool: "source-map",
     resolve: {
@@ -24,23 +32,6 @@ module.exports = (_env) => {
           use: [
             {
               loader: "babel-loader",
-              options: {
-                presets: [
-                  [
-                    "@babel/preset-env",
-                    {
-                      targets: {
-                        browsers: [
-                          "> 1%",
-                          "last 2 versions",
-                          "Firefox ESR",
-                          "ie 11",
-                        ],
-                      },
-                    },
-                  ],
-                ],
-              },
             },
             {
               loader: "ts-loader",
@@ -56,23 +47,6 @@ module.exports = (_env) => {
           test: /\.js$/,
           use: {
             loader: "babel-loader",
-            options: {
-              presets: [
-                [
-                  "@babel/preset-env",
-                  {
-                    targets: {
-                      browsers: [
-                        "> 1%",
-                        "last 2 versions",
-                        "Firefox ESR",
-                        "ie 11",
-                      ],
-                    },
-                  },
-                ],
-              ],
-            },
           },
         },
         {
@@ -80,6 +54,12 @@ module.exports = (_env) => {
           exclude: path.resolve(__dirname, "node_modules"),
           use: ["raw-loader"],
         },
+      ],
+    },
+    watchOptions: {
+      ignored: [
+        path.resolve(__dirname, "dist"),
+        path.resolve(__dirname, "node_modules"),
       ],
     },
     optimization: {
