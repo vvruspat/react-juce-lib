@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/vvruspat/react-juce-lib.git"
   },
-  "main": "src/index.tsx",
+  "main": "dist/index.js",
   "author": "Nick Thompson",
   "devDependencies": {
     "@types/invariant": "^2.2.33",
