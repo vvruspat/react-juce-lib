@@ -6,6 +6,8 @@ module.exports = (_env) => {
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "index.js",
+      libraryTarget: "umd",
+      globalObject: "this",
       sourceMapFilename: "[file].map",
       devtoolModuleFilenameTemplate: "webpack:///[absolute-resource-path]",
     },

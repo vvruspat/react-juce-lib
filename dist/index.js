@@ -1,4 +1,14 @@
-/******/ (function() { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function() {
+return /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 664:
@@ -14786,6 +14796,17 @@ module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens"
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	!function() {
 /******/ 		__webpack_require__.nmd = function(module) {
@@ -14800,8 +14821,27 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-// UNUSED EXPORTS: Button, Canvas, CanvasRenderingContext, EventBridge, Image, ListView, ScrollView, Slider, SyntheticEvent, SyntheticKeyboardEvent, SyntheticMouseEvent, Text, TextInput, View, default
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Button": function() { return /* reexport */ Button; },
+  "Canvas": function() { return /* reexport */ Canvas; },
+  "CanvasRenderingContext": function() { return /* reexport */ CanvasRenderingContext; },
+  "EventBridge": function() { return /* reexport */ lib_EventBridge; },
+  "Image": function() { return /* reexport */ Image; },
+  "ListView": function() { return /* reexport */ ListView; },
+  "ScrollView": function() { return /* reexport */ ScrollView; },
+  "Slider": function() { return /* reexport */ Slider; },
+  "SyntheticEvent": function() { return /* reexport */ SyntheticEvent; },
+  "SyntheticKeyboardEvent": function() { return /* reexport */ SyntheticKeyboardEvent; },
+  "SyntheticMouseEvent": function() { return /* reexport */ SyntheticMouseEvent; },
+  "Text": function() { return /* reexport */ Text; },
+  "TextInput": function() { return /* reexport */ TextInput; },
+  "View": function() { return /* reexport */ View; },
+  "default": function() { return /* binding */ src; }
+});
 
 // EXTERNAL MODULE: ./node_modules/known-css-properties/index.js
 var known_css_properties = __webpack_require__(245);
@@ -63118,7 +63158,7 @@ NativeMethods.dispatchEvent = function dispatchEvent(eventType) {
   EventBridge.emit.apply(EventBridge, EventBridge_spreadArray([eventType], args, false));
 };
 
-/* harmony default export */ var lib_EventBridge = ((/* unused pure expression or super */ null && (EventBridge)));
+/* harmony default export */ var lib_EventBridge = (EventBridge);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(745);
 ;// CONCATENATED MODULE: ./src/components/View.ts
@@ -63126,16 +63166,16 @@ var react = __webpack_require__(745);
 // you can use <View> in your JSX. Otherwise we need the dynamic friendliness
 // of the createElement call (note that the type is a string...);
 
-function View_View(props) {
+function View(props) {
   return react.createElement("View", props, props.children);
 }
-View_View.ClickEventFlags = {
+View.ClickEventFlags = {
   disableClickEvents: 0,
   allowClickEvents: 1,
   allowClickEventsExcludingChildren: 2,
   allowClickEventsOnlyOnChildren: 3
 };
-View_View.EasingFunctions = {
+View.EasingFunctions = {
   linear: 0,
   quadraticIn: 1,
   quadraticOut: 2,
@@ -63515,7 +63555,7 @@ Text.JustificationFlags = {
 ;// CONCATENATED MODULE: ./src/components/TextInput.tsx
 
 function TextInput(props) {
-  return React.createElement("TextInput", props, props.children);
+  return react.createElement("TextInput", props, props.children);
 }
 ;// CONCATENATED MODULE: ./src/components/Image.ts
 
@@ -63609,20 +63649,20 @@ var Button = function Button(_a) {
       children = _a.children,
       other = Button_rest(_a, ["onMouseDown", "onMouseUp", "onClick", "children"]);
 
-  var _ref = useRef();
+  var _ref = (0,react.useRef)();
 
-  var _b = useState(false),
+  var _b = (0,react.useState)(false),
       down = _b[0],
       setDown = _b[1];
 
-  var opacity = useMemo(function () {
+  var opacity = (0,react.useMemo)(function () {
     return down ? 0.8 : 1.0;
   }, [down]);
-  var handleDown = useCallback(function (e) {
+  var handleDown = (0,react.useCallback)(function (e) {
     onMouseDown === null || onMouseDown === void 0 ? void 0 : onMouseDown(e);
     setDown(true);
   }, []);
-  var handleUp = useCallback(function (e) {
+  var handleUp = (0,react.useCallback)(function (e) {
     onMouseUp === null || onMouseUp === void 0 ? void 0 : onMouseUp(e);
     setDown(false);
 
@@ -63634,7 +63674,7 @@ var Button = function Button(_a) {
       }
     }
   }, []);
-  return _jsx(View, __assign({
+  return (0,jsx_runtime.jsx)(View, __assign({
     onMouseDown: handleDown,
     onMouseUp: handleUp,
     opacity: opacity,
@@ -63880,7 +63920,7 @@ function (_super) {
   };
 
   Slider.prototype.render = function () {
-    return (0,jsx_runtime.jsxs)(View_View, Slider_assign({}, this.props, {
+    return (0,jsx_runtime.jsxs)(View, Slider_assign({}, this.props, {
       onMeasure: this._onMeasure,
       onMouseDown: this._onMouseDown,
       onMouseDrag: this._onMouseDrag
@@ -64163,6 +64203,8 @@ var __preferredRenderer = Renderer;
   }
 });
 }();
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
 //# sourceMappingURL=index.js.map
