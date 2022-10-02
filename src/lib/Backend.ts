@@ -1,4 +1,4 @@
-import "core-js/es/map";
+import { Map } from "core-js/es6";
 import { all as allCssProps } from "known-css-properties";
 import camelCase from "camelcase";
 import NativeMethods from "./NativeMethods";
