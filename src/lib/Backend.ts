@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import { all as allCssProps } from "known-css-properties";
 import camelCase from "camelcase";
 import NativeMethods from "./NativeMethods";
