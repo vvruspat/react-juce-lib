@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+import "core-js/es/map";
 import { all as allCssProps } from "known-css-properties";
 import camelCase from "camelcase";
 import NativeMethods from "./NativeMethods";
