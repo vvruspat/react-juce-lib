@@ -68244,17 +68244,8 @@ var __preferredRenderer = _lib_Renderer__WEBPACK_IMPORTED_MODULE_1__["default"];
 
     if (!container._rootContainer) {
       //TODO: Double check passing false for final param "hydrate correct"
-      // containerInfo: Container,
-      // tag: RootTag,
-      // hydrationCallbacks: null | SuspenseHydrationCallbacks<SuspenseInstance>,
-      // isStrictMode: boolean,
-      // concurrentUpdatesByDefaultOverride: null | boolean,
-      // identifierPrefix: string,
-      // onRecoverableError: (error: Error) => void,
-      // transitionCallbacks: null | TransitionTracingCallbacks,
-      container._rootContainer = __preferredRenderer.createContainer(container, element, null, false, false, "app", function (e) {
-        return console.log("error", e);
-      }, null);
+      //@ts-ignore
+      container._rootContainer = __preferredRenderer.createContainer(container, false, false);
     } // Update the root Container
 
 
