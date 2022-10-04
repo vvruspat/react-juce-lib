@@ -21,7 +21,7 @@ let __preferredRenderer = Renderer;
 
 // TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
 // @ts-ignore
-window?.clearContainer = function () {};
+var clearContainer = function () {};
 
 export default {
   getRootContainer() {
