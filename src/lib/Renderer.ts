@@ -236,7 +236,11 @@ const HostConfig = {
     parentContainer.removeChild(child);
   },
 
-  clearContainer() {},
+  clearContainer(container: ViewInstance) {
+    Array.from(container._children).forEach((child) => {
+      container.removeChild(child);
+    });
+  },
 };
 
 //TODO: Applied ts-ignore here as TS complains about missing functions on HostConfig
