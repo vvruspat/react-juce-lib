@@ -1,3 +1,5 @@
+import "core-js/actual";
+
 import Backend from "./lib/Backend";
 import Renderer, { TracedRenderer } from "./lib/Renderer";
 

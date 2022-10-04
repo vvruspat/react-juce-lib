@@ -1,4 +1,3 @@
-import { Map } from "core-js";
 import { all as allCssProps } from "known-css-properties";
 import camelCase from "camelcase";
 import NativeMethods from "./NativeMethods";
