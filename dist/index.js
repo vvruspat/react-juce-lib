@@ -91512,9 +91512,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var __renderStarted = false;
 var __preferredRenderer = _lib_Renderer__WEBPACK_IMPORTED_MODULE_2__["default"]; // TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
+// @ts-ignore
 
-function clearContainer() {}
-
+window === null || window === void 0 ? void 0 : window.clearContainer = function () {};
 /* harmony default export */ __webpack_exports__["default"] = ({
   getRootContainer: function getRootContainer() {
     return _lib_Backend__WEBPACK_IMPORTED_MODULE_1__["default"].getRootContainer();
