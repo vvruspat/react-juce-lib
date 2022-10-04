@@ -36175,7 +36175,8 @@ var HostConfig = {
   /** Remove a child from a parent container. */
   removeChildFromContainer: function removeChildFromContainer(parentContainer, child) {
     parentContainer.removeChild(child);
-  }
+  },
+  clearContainer: function clearContainer() {}
 }; //TODO: Applied ts-ignore here as TS complains about missing functions on HostConfig
 //@ts-ignore
 
@@ -91458,16 +91459,6 @@ module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens"
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
-/*!****************!*\
-  !*** ./fix.js ***!
-  \****************/
-/*
- TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
- */
-var clearContainer = function clearContainer() {};
-}();
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";

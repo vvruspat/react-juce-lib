@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = (_env) => {
   return {
-    entry: ["./fix.js", "./src/index.tsx"],
+    entry: ["./src/index.tsx"],
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "index.js",

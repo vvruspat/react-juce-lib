@@ -235,6 +235,8 @@ const HostConfig = {
   ): void {
     parentContainer.removeChild(child);
   },
+
+  clearContainer() {},
 };
 
 //TODO: Applied ts-ignore here as TS complains about missing functions on HostConfig
