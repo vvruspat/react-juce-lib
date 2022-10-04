@@ -19,10 +19,6 @@ export * from "./lib/SyntheticEvents";
 let __renderStarted = false;
 let __preferredRenderer = Renderer;
 
-// TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
-// @ts-ignore
-var clearContainer = function () {};
-
 export default {
   getRootContainer() {
     return Backend.getRootContainer();

@@ -91458,6 +91458,16 @@ module.exports = JSON.parse('{"properties":["-epub-caption-side","-epub-hyphens"
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!****************!*\
+  !*** ./fix.js ***!
+  \****************/
+/*
+ TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
+ */
+var clearContainer = function clearContainer() {};
+}();
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
@@ -91511,11 +91521,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var __renderStarted = false;
-var __preferredRenderer = _lib_Renderer__WEBPACK_IMPORTED_MODULE_2__["default"]; // TODO: remove it in the future https://github.com/sophiebits/react-dom-mini/issues/20
-// @ts-ignore
-
-var clearContainer = function clearContainer() {};
-
+var __preferredRenderer = _lib_Renderer__WEBPACK_IMPORTED_MODULE_2__["default"];
 /* harmony default export */ __webpack_exports__["default"] = ({
   getRootContainer: function getRootContainer() {
     return _lib_Backend__WEBPACK_IMPORTED_MODULE_1__["default"].getRootContainer();

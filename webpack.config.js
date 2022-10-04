@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = (_env) => {
   return {
-    entry: "./src/index.tsx",
+    entry: ["./fix.js", "./src/index.tsx"],
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "index.js",
@@ -51,7 +51,6 @@ module.exports = (_env) => {
         },
         {
           test: /\.svg$/,
-          exclude: path.resolve(__dirname, "node_modules"),
           use: ["raw-loader"],
         },
       ],
